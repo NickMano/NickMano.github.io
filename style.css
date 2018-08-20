@@ -1,0 +1,33 @@
+body{
+	background-image: url(bg.png);
+	background-size: cover;
+}
+
+li{
+	display: inline-block;
+}
+
+h2{
+	text-align: center;
+}
+
+p{
+	color: black;
+}
+
+.container{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+
+img{
+	width: 400px;
+	height: 300px;
+	margin: 5px;
+	transition: all 1s;
+}
+
+img:hover{
+	transform: scale(1.1);
+}
