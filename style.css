@@ -31,3 +31,8 @@ img{
 img:hover{
 	transform: scale(1.1);
 }
+
+video {
+    width: 350px;
+    height: 250px;
+}
