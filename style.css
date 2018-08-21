@@ -1,34 +1,36 @@
 body{
 	background-image: url(bg.jpg);
 	background-size: cover;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+
 }
 
 li{
 	display: inline-block;
 }
 
-h2{
-	text-align: center;
-}
 
 p{
 	color: black;
 }
 
-.container{
+.flex{
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
 }
 
-img{
+.flex-img{
 	width: 450px;
 	height: 280px;
 	margin: 5px;
 	transition: all 1s;
 }
 
-img:hover{
+.flex-img:hover{
 	transform: scale(1.2);
 }
 
@@ -41,4 +43,24 @@ video {
 
 video:hover{
 	transform: scale(1.2);
+}
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.featurette-image{
+	border-radius: 50%;
 }

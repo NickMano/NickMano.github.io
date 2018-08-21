@@ -7,7 +7,7 @@
 </head>
 <body>	
 	<header>
-		<nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="#">NM</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -37,21 +37,52 @@
   </div>
 </nav>
 	</header>
-	<br>
-	<section>
-		<h2>Proyectos</h2>
+	<main>
+		<br>
+		<h2 class="text-center">Proyectos</h2>
 		<p class="text-center">Esta pagina ha sido creada para mostrar los proyectos que he realizado y los que realizare</p>
-	</section>
+	
 
-	<div class="container">
-		<video controls>
-		    <source src="nicachoBros.mp4" type="video/mp4">
-		    Your browser does not support HTML5 video.
-		  </video>
-		<img src="2.jpg">
-		<img src="3.jpg">
-		<img src="4.jpg">
-	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col flex">
+					<video controls class="flex-img">
+					    <source src="nicachoBros.mp4" type="video/mp4">
+					    Your browser does not support HTML5 video.
+					  </video>
+					<img src="2.jpg" class="flex-img">
+					<img src="3.jpg" class="flex-img">
+					<img src="4.jpg" class="flex-img">
+					
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+
+	        <div class="row featurette">
+	          <div class="col-md-7">
+	            <h2 class="featurette-heading text-muted">Titulo</h2>
+	            <p class="lead">Actualmente hago "", estudio "" y otra info</p>
+	          </div>
+	          <div class="col-md-5">
+	            <img class="featurette-image img-fluid mx-auto" src="0.jpeg" alt="Generic placeholder image">
+	          </div>
+	        </div>
+			<hr class="featurette-divider">
+
+	        <div class="row featurette">
+	          <div class="col-md-7 order-md-2">
+	            <h2 class="featurette-heading">Proyecto <span class="text-muted">Nicacho Bros</span></h2>
+	            <p class="lead">Breve descricion + boton para ir a proyecto</p>
+	          </div>
+	          <div class="col-md-5 order-md-1">
+	            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="imagen del proyecto">
+	          </div>
+	        </div>
+
+		</div>
+	</main>
+
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
