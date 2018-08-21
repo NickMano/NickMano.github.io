@@ -22,17 +22,23 @@ p{
 }
 
 img{
-	width: 350px;
-	height: 250px;
+	width: 450px;
+	height: 280px;
 	margin: 5px;
 	transition: all 1s;
 }
 
 img:hover{
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
 
 video {
-    width: 350px;
-    height: 250px;
+    width: 450px;
+    height: 280px;
+    margin: 5px;
+    transition: all 1s;
+}
+
+video:hover{
+	transform: scale(1.2);
 }
