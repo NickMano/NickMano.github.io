@@ -1,48 +1,36 @@
 body{
-	background-image: url(bg.jpg);
+	background-image: url(imgs/bg.jpg);
 	background-size: cover;
-
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 
 
 }
 
-li{
-	display: inline-block;
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-caption > p , .carousel-caption > h1{
+  color: black;
 }
 
 
-p{
-	color: black;
+.carousel-item {
+  height: 40rem;
+  background-color: #777;
 }
-
-.flex{
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-around;
-}
-
-.flex-img{
-	width: 450px;
-	height: 280px;
-	margin: 5px;
-	transition: all 1s;
-}
-
-.flex-img:hover{
-	transform: scale(1.2);
-}
-
-video {
-    width: 450px;
-    height: 280px;
-    margin: 5px;
-    transition: all 1s;
-}
-
-video:hover{
-	transform: scale(1.2);
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
 }
 
 .featurette-divider {
@@ -56,11 +44,14 @@ video:hover{
   letter-spacing: -.05rem;
 }
 
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
 .featurette-image{
 	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.icon{
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
 }
