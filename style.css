@@ -7,35 +7,14 @@ body{
 
 }
 
-.carousel {
-  margin-bottom: 4rem;
-}
-
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-.carousel-caption > p , .carousel-caption > h1{
-  color: black;
-}
-
-
-.carousel-item {
-  height: 40rem;
-  background-color: #777;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 40rem;
-}
-
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
+
+.featurette-divider-botton {
+  margin: 0 0 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
 
 /* Thin out the marketing headings */
 .featurette-heading {
@@ -52,6 +31,6 @@ body{
 
 .icon{
 	border-radius: 50%;
-	width: 20px;
-	height: 20px;
+	width: 50px;
+	height: 50px;
 }
