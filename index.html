@@ -1,85 +1,103 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Nicolas Manograsso</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>	
-	<header>
-		<nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="#nicolas">Nicolas Manograsso</a>
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#portafolio">Portafolio</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main role="main">
-      	<div class="container">
-			<section id="nicolas">
-					<hr class="featurette-divider">
-
-					<div class="row featurette">
-						<div class="col-md-7">
-							<h2 class="featurette-heading "><p>Hola! Soy <strong>Nicolas Manograsso</strong></p><p>Project Manager con pasion <br> por el desarrollo Mobile</p></h2>
-						</div>
-						<div class="col-md-5">
-							<img class="featurette-image img-fluid mx-auto" src="imgs/0.jpeg" alt="Nicolas Manograssso">
-						</div>
-					</div>
-				<hr class="featurette-divider">
-			</section>
-
-			<section id="portafolio">
-				<h2>Portafolio (proyectos mas revelantes)</h2>
-				<hr class="featurette-divider-botton">
-				<article>
-					<div class="row featurette">
-						<div class="col-md-7">
-							<h2 class="featurette-heading">The Legend of Nickest (En desarrollo)</h2>
-							<p class="lead">Unity 2D / RPG</p>
-							<p>Debemos ayudar a Nickest a devolver la paz de su mundo encontrando distintos artefactos misticos que se encuentran dispersados en los templos sagrados. </p>
-							<p>Puedes verlo en: <a href="https://github.com/Nick-m96/NicachoBros2">GitHub</a></p>
-						</div>
-						<div class="col-md-5">
-							<img class="featurette-image img-fluid mx-auto" src="imgs/TLON/image3.png" alt="TLON">
-						</div>
-					</div>
-	
-					<hr class="featurette-divider">
-				</article>
-
-				<article>
-					<div class="row featurette">
-						<div class="col-md-7">
-						<h2 class="featurette-heading">Nickest Jump</h2>
-						<p class="lead">Unity 2D / Mobile</p>
-						<p>Inspirado en el Dinausaurio de Chrome. <br>Probando interaccion con el usuario, guardado de puntos localmente y generacion de enemigos.</p>
-						<p>Puedes verlo en: <a href="https://github.com/Nick-m96/NicachoBros">GitHub</a></p>
-
-						</div>
-						<div class="col-md-5">
-						<img class="featurette-image img-fluid mx-auto" src="imgs/NickestJump/icon.png" alt="TLON">
-						</div>
-					</div>
-
-					<hr class="featurette-divider">
-				</article>
-			</section>
-		</div>
-
-		<footer class="container">
-	        <div class="float-right">
-				<a href="#"><img class="icon img-fluid mx-auto" src="imgs/gitIcon.png" alt="Git"> </a> 
-				<a href="#"><img class="icon img-fluid mx-auto" src="imgs/CVIcon.ico" alt="Word"></a>
-			</div>
-      	</footer>
-	</main>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nicolas Manograsso</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <figure class="logo">
+        <a href="#hero">Nicolas Manograsso</a>
+      </figure>
+      <nav class="menu">
+        <ol>
+          <li>
+            <a class="link" href="#portfoil">Portafolio</a>
+          </li>
+          <li>
+            <a class="link" href="#about">Acerca</a>
+          </li>
+          <li>
+            <a class="link" href="#contact">Trabajemos juntos</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <section id="hero" class="hero">
+      <div class="fade-effect">
+        <h1 class="name">Nicolas Manograsso</h1>
+        <h1 class="title">Soy un Team Manager con pasion por el desarrollo Mobile y Videojuegos</h1>
+      </div>
+    </section>
+    <section id="portfoil" class="portfoil">
+      <h2>Portafolio (Proyectos Destacados)</h2>
+      <div class="cards">
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">The Legend of Nickest (En desarrollo)</h3>
+            <h5 class="project-couser">Unity 2D / RPG</h5>
+            <p class="project-date"><strong>Fecha:</strong> 13/08/2018</p>
+            <p class="project-url"><strong>Pueds verlo en:</strong> <a target="_blank" href="https://github.com/Nick-m96/The-Legend-Of-Nickest">GitHub</a></p>
+            <p class="project-description">Debemos ayudar a Nickest a devolver la paz de su mundo encontrando distintos artefactos misticos que se encuentran dispersados en los templos sagrados. </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img class="project-image" src="images/TLON.png" alt="proyecto del curso de Unity">
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Nickest Jump</h3>
+            <h5 class="project-couser">Unity 2D / Mobile</h5>
+            <p class="project-date"><strong>Fecha:</strong> 01/06/2018</p>
+            <p class="project-url"><strong>Pueds verlo en:</strong> <a target="_blank" href="https://github.com/Nick-m96/Nickest-Jump">GitHub</a></p>
+            <p class="project-description">Inspirado en el Dinausaurio de Chrome. <br/> 
+                Probando interaccion con el usuario, guardado de puntos localmente y generacion de enemigos.</p>
+          </div>
+          <figure class="project-imageContainer">
+            <img class="project-image" src="images/NickestJump.png" alt="proyecto del curso de Unity">
+          </figure>
+        </article>
+        <article class="project">
+            <div class="project-details">
+              <h3 class="project-title">Simon Says</h3>
+              <h5 class="project-couser">JavaScript</h5>
+              <p class="project-date"><strong>Fecha:</strong> 01/08/2019</p>
+              <p class="project-url"><strong>Pueds verlo en:</strong> <a target="_blank" href="https://github.com/Nick-m96/Simon">GitHub</a></p>
+              <p class="project-description">El fomoso juego de la seguir la secuencia de colores en el navegador hecho con JavaScript.</p>
+            </div>
+            <figure class="project-imageContainer">
+              <img class="project-image" src="images/simon.png" alt="proyecto del curso de Unity">
+            </figure>
+          </article>
+      </div>
+    </section>
+    <section id="about" class="about">
+        <h2 style="padding: 0 60px">Sobre mi</h2>
+        <div class="about-wrapper">
+          <figure class="about-imageContainer">
+            <img class="about-image" src="images/self.png"/>
+          </figure>
+          <div class="about-info">
+            <h1 class="about-title">¿Quien soy?</h1>
+            <p class="about-description">Soy un Team Manager con Background en el desarrollo Mobile. Me gusta aprender de diversas habilidades para poder crear algo increible con la iterseccion de las mismas. </p>
+          </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+      <form action="/suscripcion/" class="form-email">
+        <div class="form-inputContainer">
+            <h3>¿Creamos algo juntos?</h3>
+          <input type="text" placeholder="Déjame tu mail" class="form-input">
+          <textarea rows="7" placeholder="Motivo" class="form-input form-input-textarea"></textarea>
+          <button class="form-input form-input-button" disabled>Enviar</button>
+        </div>
+        <a target="_blank" href="https://github.com/Nick-m96/"><img src="images/github.svg" class="contact-social-icon" alt="GitHub"></a>
+        <img src="images/instagram.svg" class="contact-social-icon" alt="Instagram">
+        <img src="images/facebook.svg" class="contact-social-icon" alt="Facebook">
+        <img src="images/twitter.svg" class="contact-social-icon" alt="Twitter">
+      </form> 
+    </section>
+  </body>
 </html>
