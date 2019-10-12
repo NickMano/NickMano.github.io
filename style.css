@@ -4,6 +4,9 @@ body {
     background: #f5f5f5 
 }
 
+figure {
+    margin: 0
+}
 
 .header {
     background-color:#121316;
@@ -33,17 +36,12 @@ body {
     height: inherit;
     display: flex;
     align-items: center;
-    padding: 0 20px
+    padding: 0 10px
 }
 
 .menu {
     display: flex;
     height: inherit;
-}
-
-
-figure {
-    margin: 0
 }
 
 .hero {
@@ -53,6 +51,8 @@ figure {
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
 }
 
 .fade-effect {
