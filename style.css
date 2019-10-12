@@ -156,25 +156,17 @@ h1, h2, h3, h4, h5 {
     height: 350px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .form-email {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    height: 100%;
-}
-
-.form-inputContainer {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    width: 350px;
-    padding: 0 50px 0;
+
 }
 
 .form-input {
@@ -197,6 +189,14 @@ h1, h2, h3, h4, h5 {
     color: white;
 }
 
+.contact-social-media {
+    width: 30%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .contact-social-icon {
     width: 50px;
     margin: 0 0 30px;
@@ -212,6 +212,9 @@ h1, h2, h3, h4, h5 {
         font-size: 1.5em;
     }
 
+    .form-email {
+        width: 35%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -223,6 +226,18 @@ h1, h2, h3, h4, h5 {
     .cards {
         flex-direction: column;
     }
+
+    .form-email {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .form-email {
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 769px) {
@@ -241,6 +256,21 @@ h1, h2, h3, h4, h5 {
     .project {
         width: 90%;
     }
+
+    .form-email {
+        width: 60%;
+    }
+
+    .contact-social-media {
+        width: 15%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .contact-social-icon {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -255,5 +285,22 @@ h1, h2, h3, h4, h5 {
     
     .project-imageContainer{
         width: 20%;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact {
+        height: 500px;
+    }
+
+    .form-email, .contact-social-media {
+        width: 80%;
+    }
+
+    .contact-social-media {
+        height: 150px;
+        flex-direction: row;
     }
 }
