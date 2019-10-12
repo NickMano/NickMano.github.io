@@ -90,30 +90,36 @@ h1, h2, h3, h4, h5 {
 .cards {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .project {
-    width: 42%;
+    width: 44%;
     border-radius: 10px;
     border: 1px solid #eee;
-    margin: 10px 0px 30px;
+    margin: 20px 0px;
+    min-height: 250px;
     padding: 30px;
     background: white;
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .project-details, .project-imageContainer {
     flex-wrap: wrap;
+    width: 75%;
+}
+
+.project-imageContainer{
+    width: 20%;
 }
 
 .project-image {
-    width: 200px;
+    width: 100%;
     border-radius: 50%;
-    margin: 0 50px;
+    margin: 0;
 }
 
 .about-wrapper {
@@ -194,4 +200,60 @@ h1, h2, h3, h4, h5 {
 .contact-social-icon {
     width: 50px;
     margin: 0 0 30px;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .name {
+        font-size: 5em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .project {
+        width: 80%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .name {
+        font-size: 4em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .portfoil {
+        padding: 30px;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfoil {
+        padding: 15px;
+    }
+
+    .project-details, .project-imageContainer {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .project-imageContainer{
+        width: 20%;
+    }
 }
