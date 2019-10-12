@@ -221,6 +221,7 @@ h1, h2, h3, h4, h5 {
 
     .project {
         width: 80%;
+        margin: 20px 0 0;
     }
 
     .cards {
@@ -284,13 +285,17 @@ h1, h2, h3, h4, h5 {
         padding: 15px;
     }
 
+    .project {
+        padding: 15px;
+
+    }
+
     .project-details, .project-imageContainer {
-        flex-wrap: wrap;
-        width: 100%;
+        width: 70%;
     }
     
     .project-imageContainer{
-        width: 20%;
+        width: 25%;
     }
 
     .contact {
@@ -308,6 +313,20 @@ h1, h2, h3, h4, h5 {
     .contact-social-media {
         height: 150px;
         flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-details {
+        width: 90%;
+    }
+
+    .project-imageContainer {
+        width: 50%;
     }
 }
 
