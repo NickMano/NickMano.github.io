@@ -33,6 +33,7 @@ figure {
 .header a {
     color: white;
     text-decoration: none;
+    text-align: center;
     height: inherit;
     display: flex;
     align-items: center;
@@ -317,6 +318,25 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 425px) {
+
+    .header {
+        height: 50px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .header ol {
+        padding: 0;
+        width: inherit;
+        justify-content: space-around;
+    }
+
     .project {
         flex-direction: column;
     }
