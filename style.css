@@ -247,6 +247,7 @@ h1, h2, h3, h4, h5 {
 
     .title {
         font-size: 1em;
+        margin: 0 10px;
     }
 
     .portfoil {
@@ -274,6 +275,11 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 600px) {
+
+    .name {
+        font-size: 3em ;
+    }
+
     .portfoil {
         padding: 15px;
     }
@@ -304,3 +310,14 @@ h1, h2, h3, h4, h5 {
         flex-direction: row;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .name {
+        line-height: 0.9;
+        margin: 0 0 20px;
+        font-size: 2.5em ;
+    }
+
+}
+
