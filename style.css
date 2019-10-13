@@ -123,6 +123,11 @@ h1, h2, h3, h4, h5 {
     margin: 0;
 }
 
+.about-me {
+    padding: 0 60px 10px;
+
+}
+
 .about-wrapper {
     display: flex;
     padding: 0 60px 60px;
@@ -137,8 +142,6 @@ h1, h2, h3, h4, h5 {
 
 .about-image {
     width: 100%;
-    /* -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%);  */
 }
 
 .about-info {
@@ -204,7 +207,6 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 1250px) {
-
     .name {
         font-size: 5em;
     }
@@ -219,7 +221,6 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 1200px) {
-
     .project {
         width: 80%;
         margin: 20px 0 0;
@@ -235,11 +236,31 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 1000px) {
+    .portfoil h2{
+        text-align: center;
+    }
 
-    .form-email {
+    .about {
+        text-align: center;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 20px;
+    }
+
+    .about-imageContainer, .form-email {
         width: 50%;
     }
 
+    .about-title {
+        display: none;
+    }
+
+    .about-info {
+        padding: 10px 0 0;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -248,7 +269,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .title {
-        font-size: 1em;
+        font-size: 1.2em;
         margin: 0 10px;
     }
 
@@ -258,6 +279,10 @@ h1, h2, h3, h4, h5 {
 
     .project {
         width: 90%;
+    }
+
+    .about-wrapper {
+        padding: 0 30px 30px;
     }
 
     .form-email {
@@ -277,18 +302,16 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 600px) {
-
     .name {
         font-size: 3em ;
     }
 
-    .portfoil {
-        padding: 15px;
+    .title {
+        font-size: 1em;
     }
 
-    .project {
+    .portfoil, .project {
         padding: 15px;
-
     }
 
     .project-details, .project-imageContainer {
@@ -297,6 +320,14 @@ h1, h2, h3, h4, h5 {
     
     .project-imageContainer{
         width: 25%;
+    }
+
+    .about-me {
+        padding: 0 15px;
+    }
+
+    .about-wrapper {
+        padding: 0 15px 30px;
     }
 
     .contact {
@@ -318,7 +349,6 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 425px) {
-
     .header {
         height: 50px;
     }
@@ -339,6 +369,7 @@ h1, h2, h3, h4, h5 {
 
     .project {
         flex-direction: column;
+        text-align: center;
     }
 
     .project-details {
@@ -348,15 +379,17 @@ h1, h2, h3, h4, h5 {
     .project-imageContainer {
         width: 50%;
     }
+
+    .about-imageContainer, .about-info {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 375px) {
-
     .name {
         line-height: 0.9;
         margin: 0 0 20px;
         font-size: 2.5em ;
     }
-
 }
 
