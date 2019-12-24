@@ -1,3 +1,50 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?fegmz8');
+    src:  url('fonts/icomoon.eot?fegmz8#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?fegmz8') format('truetype'),
+      url('fonts/icomoon.woff?fegmz8') format('woff'),
+      url('fonts/icomoon.svg?fegmz8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+[class^="icon-"], [class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'icomoon' !important;
+speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+color: white;
+width: 50px;
+height: 50px;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-menu:before {
+content: "\e9bd";
+}
+.icon-facebook:before {
+content: "\ea90";
+}
+.icon-instagram:before {
+content: "\ea92";
+}
+.icon-twitter:before {
+content: "\ea96";
+}
+.icon-github:before {
+content: "\eab0";
+}
+
+
 body {
     font-family: 'SF Pro Display', 'Roboto', Helvetica, sans-serif;
     margin: 0;
@@ -191,19 +238,20 @@ h1, h2, h3, h4, h5 {
     background-color: #ff5460;
     border-color: #ff5460;
     color: white;
+    height: 35px;
 }
 
 .contact-social-media {
     width: 30%;
-    height: inherit;
+    height: calc(100% - 30px);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 30px;
 }
 
 .contact-social-icon {
     width: 50px;
-    margin: 0 0 30px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -232,6 +280,15 @@ h1, h2, h3, h4, h5 {
 
     .form-email {
         width: 40%;
+    }
+
+    .contact-social-media {
+        flex-wrap: wrap;
+    }
+
+    .contact-social-media-icon-container {
+        width: 50%;
+        text-align: center;
     }
 }
 
@@ -289,15 +346,21 @@ h1, h2, h3, h4, h5 {
         width: 60%;
     }
 
-    .contact-social-media {
-        width: 15%;
+    .contact {
         flex-direction: column;
+        height: 500px;
+    }
+
+    .contact-social-media {
+        width: 60%;
         align-items: center;
         justify-content: space-around;
+        height: auto;
+        margin-bottom: 20px;
     }
-    
-    .contact-social-icon {
-        margin: 0;
+
+    .contact-social-media-icon-container {
+        width: auto;
     }
 }
 
@@ -330,21 +393,8 @@ h1, h2, h3, h4, h5 {
         padding: 0 15px 30px;
     }
 
-    .contact {
-        flex-direction: column;
-    }
-
-    .contact {
-        height: 500px;
-    }
-
     .form-email, .contact-social-media {
         width: 80%;
-    }
-
-    .contact-social-media {
-        height: 150px;
-        flex-direction: row;
     }
 }
 

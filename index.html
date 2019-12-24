@@ -29,49 +29,13 @@
     <section id="hero" class="hero">
       <div class="fade-effect">
         <h1 class="name">Nicolas Manograsso</h1>
-        <h1 class="title">Team Manager con pasion por el desarrollo Mobile y Videojuegos</h1>
+        <h1 class="title">Team Manager con pasion por el Desarrollo</h1>
       </div>
     </section>
     <section id="portfoil" class="portfoil">
-      <h2>Portafolio (Proyectos Destacados)</h2>
-      <div class="cards">
-        <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">The Legend of Nickest (En desarrollo)</h3>
-            <h5 class="project-couser">Unity 2D / RPG</h5>
-            <p class="project-date"><strong>Fecha:</strong> 13/08/2018</p>
-            <p class="project-url"><strong>Pueds verlo en:</strong> <a target="_blank" href="https://github.com/Nick-m96/The-Legend-Of-Nickest">GitHub</a></p>
-            <p class="project-description">Debemos ayudar a Nickest a devolver la paz de su mundo encontrando distintos artefactos misticos que se encuentran dispersados en los templos sagrados. </p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" src="images/TLON.png" alt="proyecto del curso de Unity">
-          </figure>
-        </article>
-        <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">Nickest Jump</h3>
-            <h5 class="project-couser">Unity 2D / Mobile</h5>
-            <p class="project-date"><strong>Fecha:</strong> 01/06/2018</p>
-            <p class="project-url"><strong>Pueds verlo en:</strong> <a target="_blank" href="https://github.com/Nick-m96/Nickest-Jump">GitHub</a></p>
-            <p class="project-description">Inspirado en el Dinausaurio de Chrome. <br/> 
-                Probando interaccion con el usuario, guardado de puntos localmente y generacion de enemigos.</p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" src="images/NickestJump.png" alt="proyecto del curso de Unity">
-          </figure>
-        </article>
-        <article class="project">
-            <div class="project-details">
-              <h3 class="project-title">Simon Says</h3>
-              <h5 class="project-couser">JavaScript</h5>
-              <p class="project-date"><strong>Fecha:</strong> 01/08/2019</p>
-              <p class="project-url"><strong>Pueds verlo en:</strong> <a target="_blank" href="https://github.com/Nick-m96/Simon">GitHub</a></p>
-              <p class="project-description">El fomoso juego de la seguir la secuencia de colores en el navegador hecho con JavaScript.</p>
-            </div>
-            <figure class="project-imageContainer">
-              <img class="project-image" src="images/simon.png" alt="proyecto del curso de Unity">
-            </figure>
-          </article>
+      <h2>Portafolios ( y Proyectos Destacados)</h2>
+      <div class="cards" id="prjt">
+        <!-- Load from Javascript -->
       </div>
     </section>
     <section id="about" class="about">
@@ -94,11 +58,22 @@
           <button class="form-input form-input-button" disabled>Enviar</button>
         </form> 
         <div class="contact-social-media">
-          <a target="_blank" href="https://github.com/Nick-m96/"><img src="images/github.svg" class="contact-social-icon" alt="GitHub"></a>
-          <img src="images/instagram.svg" class="contact-social-icon" alt="Instagram">
-          <img src="images/facebook.svg" class="contact-social-icon" alt="Facebook">
-          <img src="images/twitter.svg" class="contact-social-icon" alt="Twitter">
+          <div class="contact-social-media-icon-container">
+            <a target="_blank" href="https://github.com/Nick-m96/">
+              <img src="images/github.svg" class="contact-social-icon" alt="Github">
+            </a>
+          </div>
+          <div class="contact-social-media-icon-container">
+            <img src="images/instagram.svg" class="contact-social-icon" alt="instagram">
+          </div>
+          <div class="contact-social-media-icon-container">
+            <img src="images/facebook.svg" class="contact-social-icon" alt="Facebook">
+          </div>
+          <div class="contact-social-media-icon-container">
+            <img src="images/twitter.svg" class="contact-social-icon" alt="Twitter">
+          </div>
         </div>
     </section>
+    <script src="projects.js"></script>
   </body>
 </html>
