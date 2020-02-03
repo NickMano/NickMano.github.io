@@ -16,14 +16,14 @@ const data = {
             "repo": "https://github.com/Nick-m96/The-Legend-Of-Nickest",
             "description": "Debemos ayudar a Nickest a devolver la paz de su mundo encontrando distintos artefactos misticos que se encuentran dispersados en los templos sagrados.",
             "imageUrl": "images/TLON.png",
-            "imageAlt": "proyecto del curso de Unity" 
+            "imageAlt": "The Legend of Nickest" 
         },
         {
             "title": "Hangman Pokemon",
             "tech": "Python 3",
             "date": "16/11/2018",
             "repo": "https://github.com/Nick-m96/Hangman-Pokemon",
-            "description": "El juego del Ahorcado con los clasicos pokemons de la primera generacion. Debemos descubrir el nombre del pokemon oculto que es elegido de manera aleatoria a travez de una API.",
+            "description": "El juego del Ahorcado con los 151 pokemons de la primera generacion. Debemos descubrir el nombre del pokemon oculto que es elegido de manera aleatoria a travez de una API.",
             "imageUrl": "images/hangmanpkm.png",
             "imageAlt": "Pokeball" 
         },

@@ -48,7 +48,7 @@ content: "\eab0";
 body {
     font-family: 'SF Pro Display', 'Roboto', Helvetica, sans-serif;
     margin: 0;
-    background: #f5f5f5 
+    background: #121316
 }
 
 figure {
@@ -133,6 +133,7 @@ h1, h2, h3, h4, h5 {
 
 .portfoil {
     padding: 60px;
+    background-color: #f5f5f5 
 }
 
 .cards {
@@ -172,7 +173,7 @@ h1, h2, h3, h4, h5 {
 
 .about-me {
     padding: 0 60px 10px;
-
+    background-color: #f5f5f5; 
 }
 
 .about-wrapper {
