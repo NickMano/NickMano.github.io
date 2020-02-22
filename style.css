@@ -44,7 +44,6 @@ content: "\ea96";
 content: "\eab0";
 }
 
-
 body {
     font-family: 'SF Pro Display', 'Roboto', Helvetica, sans-serif;
     margin: 0;
@@ -249,6 +248,7 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 30px;
+    display: none
 }
 
 .contact-social-icon {
@@ -443,4 +443,3 @@ h1, h2, h3, h4, h5 {
         font-size: 2.5em ;
     }
 }
-
