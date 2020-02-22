@@ -1,61 +1,20 @@
-@font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?fegmz8');
-    src:  url('fonts/icomoon.eot?fegmz8#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?fegmz8') format('truetype'),
-      url('fonts/icomoon.woff?fegmz8') format('woff'),
-      url('fonts/icomoon.svg?fegmz8#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-  
-[class^="icon-"], [class*=" icon-"] {
-/* use !important to prevent issues with browser extensions that change fonts */
-font-family: 'icomoon' !important;
-speak: none;
-font-style: normal;
-font-weight: normal;
-font-variant: normal;
-text-transform: none;
-line-height: 1;
-color: white;
-width: 50px;
-height: 50px;
-
-/* Better Font Rendering =========== */
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
-  
-.icon-menu:before {
-content: "\e9bd";
-}
-.icon-facebook:before {
-content: "\ea90";
-}
-.icon-instagram:before {
-content: "\ea92";
-}
-.icon-twitter:before {
-content: "\ea96";
-}
-.icon-github:before {
-content: "\eab0";
-}
-
-body {
-    font-family: 'SF Pro Display', 'Roboto', Helvetica, sans-serif;
+* {
     margin: 0;
+}
+
+.height-inherit {
+    height: inherit;
+}
+
+.background-black-russian {
     background: #121316
 }
 
-figure {
-    margin: 0
+body {
+    font-family: 'SF Pro Display', 'Roboto', Helvetica, sans-serif
 }
 
 .header {
-    background-color:#121316;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -66,21 +25,14 @@ figure {
 }
 
 .header ol {
-    height: inherit;
     list-style: none;
-    margin: 0;
     display: flex
-}
-
-.header li {
-    height: inherit;
 }
 
 .header a {
     color: white;
     text-decoration: none;
     text-align: center;
-    height: inherit;
     display: flex;
     align-items: center;
     padding: 0 10px
@@ -88,7 +40,7 @@ figure {
 
 .menu {
     display: flex;
-    height: inherit;
+    padding: 0px 10px;
 }
 
 .hero {
@@ -98,7 +50,7 @@ figure {
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 85vh;
     text-align: center;
 }
 
@@ -114,17 +66,14 @@ figure {
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
-    margin: 0;
 }
 
 .name {
-    font-size: 7.5em;
+    font-size: 5.5em;
     line-height: 1.5;
-    margin: 0;
 }
 
 .title {
-    margin: 0;
     font-size: 2em;
     text-align: center
 }
@@ -167,7 +116,10 @@ h1, h2, h3, h4, h5 {
 .project-image {
     width: 100%;
     border-radius: 50%;
-    margin: 0;
+}
+
+#about { 
+    display: none    
 }
 
 .about-me {
@@ -202,7 +154,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .contact {
-    background-color: #121316;
     color: white;
     height: 350px;
     display: flex;
@@ -257,7 +208,7 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 1250px) {
     .name {
-        font-size: 5em;
+        font-size: 4em;
     }
 
     .title {
@@ -323,7 +274,7 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 769px) {
     .name {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .title {
@@ -367,7 +318,7 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 600px) {
     .name {
-        font-size: 3em ;
+        font-size: 2em ;
     }
 
     .title {
@@ -440,6 +391,6 @@ h1, h2, h3, h4, h5 {
     .name {
         line-height: 0.9;
         margin: 0 0 20px;
-        font-size: 2.5em ;
+        font-size: 2em ;
     }
 }
