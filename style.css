@@ -49,7 +49,7 @@ body {
     text-align: center;
 }
 
-.fade-effect {
+.hero--fade-effect {
     background-color: rgba(0, 0, 0, 0.5);
     height: -webkit-fill-available;
     width: 100%;
@@ -63,12 +63,12 @@ h1, h2, h3, h4, h5 {
     font-weight: normal;
 }
 
-.name {
+.hero__name {
     font-size: 5.5em;
     line-height: 1.5;
 }
 
-.title {
+.hero__title {
     font-size: 2em;
     text-align: center
 }
@@ -202,11 +202,11 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 1250px) {
-    .name {
+    .hero__name {
         font-size: 4em;
     }
 
-    .title {
+    .hero__title {
         font-size: 1.5em;
     }
 
@@ -268,11 +268,11 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 769px) {
-    .name {
+    .hero__name {
         font-size: 3em;
     }
 
-    .title {
+    .hero__title {
         font-size: 1.2em;
         margin: 0 10px;
     }
@@ -312,11 +312,11 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 600px) {
-    .name {
+    .hero__name {
         font-size: 2em ;
     }
 
-    .title {
+    .hero__title {
         font-size: 1em;
     }
 
@@ -383,7 +383,7 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 375px) {
-    .name {
+    .hero__name {
         line-height: 0.9;
         margin: 0 0 20px;
         font-size: 2em ;
