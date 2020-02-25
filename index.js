@@ -1,22 +1,30 @@
 const cards = [
     {
         "title": "Team Manager",
-        "tech": "meses",
+        "badge": "meses",
         "description": "Lidero proyectos y gestiono el trabajo dentro del equipo del proyecto, orientándolo hacia la satisfacción del cliente externo y la mejora continua del servicio ofrecido.",
         "imageUrl": "images/wolox.jpeg",
         "imageAlt": "Wolox" 
     },
     {
         "title": "JIRA to Sheet",
-        "tech": "Python 3",
+        "badge": "Python 3",
         "repo": "https://github.com/NickMano/JIRA-to-Sheet",
         "description": "Creacion y automatizacion de Metricas en Poyectos que utilizan Jira Software.",
         "imageUrl": "images/python.jpg",
-        "imageAlt": "Python" 
+        "imageAlt": "JIRA to Sheet" 
+    },
+    {
+        "title": "PlatziVideo (En desarrollos)",
+        "badge": "Web",
+        "repo": "https://github.com/NickMano/platziVideo",
+        "description": "Plataforma para mirar peliculas.",
+        "imageUrl": "images/platziVideo.png",
+        "imageAlt": "platziVideo" 
     },
     {
         "title": "Hangman Pokemon",
-        "tech": "Python 3",
+        "badge": "Python 3",
         "repo": "https://github.com/NickMano/Hangman-Pokemon",
         "description": "El juego del Ahorcado con los 151 pokemons de la primera generacion.",
         "imageUrl": "images/hangmanpkm.png",
@@ -24,27 +32,35 @@ const cards = [
     },
     {
         "title": "The Legend of Nickest (En desarrollo)",
-        "tech": "Unity 2D / RPG",
+        "badge": "Unity 2D / RPG",
         "repo": "https://github.com/NickMano/The-Legend-Of-Nickest",
-        "description": "Juego de plataforma, RPG y aventura. Inspirados en los juegos de Mario, Zelda y Metroid",
+        "description": "Juego de plataforma, RPG y aventura. Inspirados en los juegos de Mario, Zelda y Metroid.",
         "imageUrl": "images/TLON.png",
         "imageAlt": "The Legend of Nickest" 
     },
     {
         "title": "Nickest Jump",
-        "tech": "Unity 2D / Mobile",
+        "badge": "Unity 2D / Mobile",
         "repo": "https://github.com/NickMano/Nickest-Jump",
-        "description": "Inspirado en el Dinausaurio de Chrome.",
+        "description": "Juego inspirado en el Dinosaurio de Chrome.",
         "imageUrl": "images/NickestJump.png",
         "imageAlt": "Nickest Jump Hero" 
     },
     {
         "title": "Simon Says",
-        "tech": "Javascript",
+        "badge": "Javascript",
         "repo": "https://github.com/NickMano/Simon",
         "description": "El famoso juego de la seguir la secuencia de colores en el navegador hecho con JavaScript.",
         "imageUrl": "images/simon.png",
         "imageAlt": "Simon Says Logo" 
+    },
+    {
+        "title": "wBooks",
+        "badge": "iOS",
+        "repo": "https://github.com/NickMano/wBooks-ios",
+        "description": "wBooks es una aplicación que gestiona reservas de libros.",
+        "imageUrl": "images/wbooks.png",
+        "imageAlt": "wBooks" 
     }
 ]
  
@@ -110,7 +126,7 @@ const setPortfoil = (section) => {
         setCard(
             section,
             project.title, 
-            project.title == 'Team Manager' ? `<label class="badge">${getMonthDiff()} ${project.tech}</label>`: `<label class="badge">${project.tech}</label>`,
+            project.title == 'Team Manager' ? `<label class="badge">${getMonthDiff()} ${project.badge}</label>`: `<label class="badge">${project.badge}</label>`,
             project.description,
             project.imageUrl,
             project.imageAlt,
