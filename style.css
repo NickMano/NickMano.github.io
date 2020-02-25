@@ -85,17 +85,17 @@ h1, h2, h3, h4, h5 {
 .portfoil__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .portfoil-card {
-    width: 44%;
+    width: 28%;
     border-radius: 10px;
     border: 1px solid #eee;
     margin: 20px 0px;
-    min-height: 250px;
-    padding: 30px;
+    min-height: 150px;
+    padding: 20px;
     background: white;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
     .hero__name {
         font-size: 4em;
     }
@@ -173,26 +173,30 @@ h1, h2, h3, h4, h5 {
     .hero__title {
         font-size: 1.5em;
     }
+
+    .portfoil-card {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-    .portfoil__container {
-        flex-direction: column;
-    }
-
-    .portfoil-card{
-        width: 80%;
-        margin: 20px 0 0;
-    }
-
     .contact{
         width: 40%;
     }
 }
 
 @media screen and (max-width: 1000px) {
+    .portfoil__container {
+        flex-direction: column;
+    }
+
     .portfoil__title{
         text-align: center;
+    }
+    
+    .portfoil-card{
+        width: 80%;
+        margin: 20px 0 0;
     }
 
     .contact{
