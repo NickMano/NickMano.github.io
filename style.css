@@ -33,6 +33,10 @@ body {
     padding: 0 10px
 }
 
+.header__link:hover {
+    text-decoration: underline;
+}
+
 .menu {
     display: flex;
     padding-right:10px;
@@ -113,50 +117,15 @@ h1, h2, h3, h4, h5 {
     border-radius: 50%;
 }
 
-#about { 
-    display: none    
-}
-
-.about-me {
-    padding: 0 60px 10px;
-    background-color: #f5f5f5; 
-}
-
-.about-wrapper {
-    display: flex;
-    padding: 0 60px 60px;
-    background-color: #eee;
-    justify-content: space-between;
-}
-
-.about-imageContainer {
-    width: 30%;
-    display: inline-block;
-}
-
-.about-image {
-    width: 100%;
-}
-
-.about-info {
-    display: inline-block;
-    width: 60%;
-    padding: 45px 0 0; 
-}
-
-.about-title {
-    font-size: 2em;
-}
-
-.contact {
+.footer {
     color: white;
-    height: 350px;
+    height: 360px;
+    margin: 20px 0;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.form-email {
+.contact{
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -166,7 +135,7 @@ h1, h2, h3, h4, h5 {
 
 }
 
-.form-input {
+.input {
     border-radius: 5px;
     height: 30px;
     width: 100%;
@@ -175,30 +144,25 @@ h1, h2, h3, h4, h5 {
     background-color: white;
 }
 
-.form-input-textarea {
+.input-textarea {
     resize: none;
     height:initial;
 }
 
-.form-input-button {
+.button {
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.button--red {
     background-color: #ff5460;
     border-color: #ff5460;
     color: white;
     height: 35px;
-}
-
-.contact-social-media {
-    width: 30%;
-    height: calc(100% - 30px);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 30px;
-    display: none
-}
-
-.contact-social-icon {
-    width: 50px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1250px) {
@@ -209,33 +173,20 @@ h1, h2, h3, h4, h5 {
     .hero__title {
         font-size: 1.5em;
     }
-
-    .form-email {
-        width: 35%;
-    }
 }
 
 @media screen and (max-width: 1200px) {
+    .portfoil__container {
+        flex-direction: column;
+    }
+
     .portfoil-card{
         width: 80%;
         margin: 20px 0 0;
     }
 
-    .portfoil__container {
-        flex-direction: column;
-    }
-
-    .form-email {
+    .contact{
         width: 40%;
-    }
-
-    .contact-social-media {
-        flex-wrap: wrap;
-    }
-
-    .contact-social-media-icon-container {
-        width: 50%;
-        text-align: center;
     }
 }
 
@@ -244,26 +195,8 @@ h1, h2, h3, h4, h5 {
         text-align: center;
     }
 
-    .about {
-        text-align: center;
-    }
-
-    .about-wrapper {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 0 20px;
-    }
-
-    .about-imageContainer, .form-email {
+    .contact{
         width: 50%;
-    }
-
-    .about-title {
-        display: none;
-    }
-
-    .about-info {
-        padding: 10px 0 0;
     }
 }
 
@@ -285,29 +218,8 @@ h1, h2, h3, h4, h5 {
         width: 90%;
     }
 
-    .about-wrapper {
-        padding: 0 30px 30px;
-    }
-
-    .form-email {
+    .contact{
         width: 60%;
-    }
-
-    .contact {
-        flex-direction: column;
-        height: 500px;
-    }
-
-    .contact-social-media {
-        width: 60%;
-        align-items: center;
-        justify-content: space-around;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .contact-social-media-icon-container {
-        width: auto;
     }
 }
 
@@ -332,15 +244,7 @@ h1, h2, h3, h4, h5 {
         width: 25%;
     }
 
-    .about-me {
-        padding: 0 15px;
-    }
-
-    .about-wrapper {
-        padding: 0 15px 30px;
-    }
-
-    .form-email, .contact-social-media {
+    .contact {
         width: 80%;
     }
 }
@@ -358,7 +262,7 @@ h1, h2, h3, h4, h5 {
         width: 100%;
     }
 
-    .header ol {
+    .header__list{
         padding: 0;
         width: inherit;
         justify-content: space-around;
@@ -375,10 +279,6 @@ h1, h2, h3, h4, h5 {
 
     .portfoil-card__imageContainer {
         width: 50%;
-    }
-
-    .about-imageContainer, .about-info {
-        width: 80%;
     }
 }
 
