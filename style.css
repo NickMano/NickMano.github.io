@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5 {
 .portfoil__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 20px 0;
 }
