@@ -7,69 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="background-black-russian">
-    <header class="header background-black-russian">
+  <body class="background--black-russian">
+    <header class="header background--black-russian">
       <figure class="logo">
-        <a href="#hero" class="height-inherit">Nicolas Manograsso</a>
+        <a href="#hero" class="header__link">Nicolas Manograsso</a>
       </figure>
-      <nav class="menu height-inherit">
-        <ol class="height-inherit">
-          <li class="height-inherit">
-            <a class="link height-inherit" href="#portfoil">Portafolio</a>
+      <nav class="menu">
+        <ol class="header__list">
+          <li>
+            <a class="header__link" href="#portfoil">Portafolio</a>
           </li>
-          <li class="height-inherit">
-            <a class="link height-inherit" href="https://github.com/NickMano/">Github</a>
+          <li>
+            <a class="header__link" href="https://github.com/NickMano/">Github</a>
           </li>
         </ol>
       </nav>
     </header>
     <section id="hero" class="hero">
-      <div class="fade-effect">
-        <h1 class="name">Nicolas Manograsso</h1>
-        <h1 class="title">Team Manager con pasion por el Desarrollo</h1>
+      <div class="hero--fade-effect">
+        <h1 class="hero__name">Nicolas Manograsso</h1>
+        <h1 class="hero__title">Team Manager con pasion por el Desarrollo</h1>
       </div>
     </section>
     <section id="portfoil" class="portfoil">
-      <h2>Portafolios ( y Proyectos Destacados)</h2>
-      <div class="cards" id="prjt">
-        <!-- Load from Javascript -->
+      <h2 class="portfoil__title">Portafolios ( y Proyectos Destacados)</h2>
+      <div class="portfoil__container" id="prjt">
+        <!-- Load info from Javascript -->
       </div>
     </section>
-    <section id="about" class="about">
-        <h2 class="about-me">Acerca de mi</h2>
-        <div class="about-wrapper">
-          <figure class="about-imageContainer">
-            <img class="about-image" src="images/IMG_0411.jpg" alt="personal-image"/>
-          </figure>
-          <div class="about-info">
-            <h1 class="about-title">¿Quien soy?</h1>
-            <p class="about-description">Soy Team Manager con background en el desarrollo y Frontend. Me gusta aprender de distintos campos para poder crear algo increible con la iterseccion de las mismos. </p>
-          </div>
-        </div>
-    </section>
-    <footer id="contact" class="contact background-black-russian">
-      <form action="/suscripcion/" class="form-email">
+    
+    <footer id="contact" class="footer">
+      <form action="/suscripcion/" class="contact">
           <h3>¿Creamos algo juntos?</h3>
-          <input type="text" placeholder="Déjame tu mail" class="form-input">
-          <textarea rows="6" placeholder="Motivo" class="form-input form-input-textarea"></textarea>
-          <button class="form-input form-input-button" disabled>Enviar</button>
+          <input type="text" placeholder="Déjame tu mail" class="input">
+          <textarea rows="6" placeholder="Motivo" class="input input-textarea"></textarea>
+          <button class="button button--red" disabled>Enviar</button>
         </form> 
-        <div class="contact-social-media">
-          <div class="contact-social-media-icon-container">
-            <a target="_blank" href="https://github.com/Nick-m96/">
-              <img src="images/github.svg" class="contact-social-icon" alt="Github">
-            </a>
-          </div>
-          <div class="contact-social-media-icon-container">
-            <img src="images/instagram.svg" class="contact-social-icon" alt="instagram">
-          </div>
-          <div class="contact-social-media-icon-container">
-            <img src="images/facebook.svg" class="contact-social-icon" alt="Facebook">
-          </div>
-          <div class="contact-social-media-icon-container">
-            <img src="images/twitter.svg" class="contact-social-icon" alt="Twitter">
-          </div>
-        </div>
     </footer>
     <script src="projects.js"></script>
   </body>
