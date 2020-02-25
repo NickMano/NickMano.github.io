@@ -35,7 +35,7 @@ body {
 
 .menu {
     display: flex;
-    padding: 0px 10px;
+    padding-right:10px;
 }
 
 .hero {
@@ -73,20 +73,19 @@ h1, h2, h3, h4, h5 {
     text-align: center
 }
 
-
 .portfoil {
-    padding: 60px;
+    padding: 60px 30px;
     background-color: #f5f5f5 
 }
 
-.cards {
+.portfoil__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.project {
+.portfoil-card {
     width: 44%;
     border-radius: 10px;
     border: 1px solid #eee;
@@ -99,16 +98,17 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
 }
 
-.project-details, .project-imageContainer {
+.portfoil-card__details {
     flex-wrap: wrap;
     width: 75%;
 }
 
-.project-imageContainer{
+.portfoil-card__imageContainer{
+    flex-wrap: wrap;
     width: 20%;
 }
 
-.project-image {
+.portfoil-card__imageContainer--image {
     width: 100%;
     border-radius: 50%;
 }
@@ -216,12 +216,12 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 1200px) {
-    .project {
+    .portfoil-card{
         width: 80%;
         margin: 20px 0 0;
     }
 
-    .cards {
+    .portfoil__container {
         flex-direction: column;
     }
 
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5 {
 }
 
 @media screen and (max-width: 1000px) {
-    .portfoil h2{
+    .portfoil__title{
         text-align: center;
     }
 
@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5 {
         padding: 30px;
     }
 
-    .project {
+    .portfoil-card{
         width: 90%;
     }
 
@@ -320,15 +320,15 @@ h1, h2, h3, h4, h5 {
         font-size: 1em;
     }
 
-    .portfoil, .project {
+    .portfoil, .portfoil-card{
         padding: 15px;
     }
 
-    .project-details, .project-imageContainer {
+    .portfoil-card__details, .portfoil-card__imageContainer {
         width: 70%;
     }
     
-    .project-imageContainer{
+    .portfoil-card__imageContainer{
         width: 25%;
     }
 
@@ -364,16 +364,16 @@ h1, h2, h3, h4, h5 {
         justify-content: space-around;
     }
 
-    .project {
+    .portfoil-card{
         flex-direction: column;
         text-align: center;
     }
 
-    .project-details {
+    .portfoil-card__details {
         width: 90%;
     }
 
-    .project-imageContainer {
+    .portfoil-card__imageContainer {
         width: 50%;
     }
 

@@ -72,17 +72,21 @@ var max = data.projets.length
 for (let i= 0; i < max; i++) {
     let item = data.projets[i]
 
-    let article = setSection('article', 'project')
-    let divDetails = setSection('div', 'project-details')
+    let article = setSection('article', 'portfoil-card')
+    let divDetails = setSection('div', 'portfoil-card__details')
     let title = setSection('h3', 'project-title', `${item.title}`)
     let tech = setSection('h5', 'project-couser', `${item.tech}`)
     let date = setSection('p', 'project-date', `<strong>Fecha: </strong>${item.date}`)
     let desc = setSection('p', 'project-description', `${item.description}`)
     
-    let figure = setSection('figure', 'project-imageContainer')
-    let img = setImage('project-image', item.imageUrl, item.imageAlt)
+    let figure = setSection('figure', 'portfoil-card__imageContainer')
+    let img = setImage('portfoil-card__imageContainer--image', item.imageUrl, item.imageAlt)
     
     section.appendChild(article)
+
+    article.appendChild(figure)
+    figure.appendChild(img)
+
     article.appendChild(divDetails)
     divDetails.appendChild(title)
     divDetails.appendChild(tech)
@@ -92,8 +96,6 @@ for (let i= 0; i < max; i++) {
         divDetails.appendChild(repo)
     }
     divDetails.appendChild(desc)
-    article.appendChild(figure)
-    figure.appendChild(img)
 }
 
 function setSection(element, htmlClass, data) {
