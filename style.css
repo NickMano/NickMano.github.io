@@ -85,8 +85,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .portfoil {
-    padding: 60px 30px;
+    padding: 60px 30px 30px;
     background-color: #f5f5f5 
+}
+
+.portfoil__title{
+    text-align: center;
 }
 
 .portfoil__container {
@@ -94,13 +98,14 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 20px 0;
 }
 
-.portfoil-card {
+.card {
     width: 28%;
     border-radius: 10px;
     border: 1px solid #eee;
-    margin: 20px 0px;
+    margin-bottom: 20px ;
     min-height: 150px;
     padding: 20px;
     background: white;
@@ -109,17 +114,33 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
 }
 
-.portfoil-card__details {
+.card__details {
     flex-wrap: wrap;
     width: 75%;
 }
 
-.portfoil-card__imageContainer{
+.badge-container {
+    margin: 6px 0
+}
+
+.badge {
+    color: white;
+    background-color: #5f5f5f;
+    padding: 4px 6px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.card__link {
+    margin: 4px 0;
+}
+
+.card__imageContainer{
     flex-wrap: wrap;
     width: 20%;
 }
 
-.portfoil-card__imageContainer--image {
+.card__imageContainer--image {
     width: 100%;
     border-radius: 50%;
 }
@@ -181,7 +202,7 @@ h1, h2, h3, h4, h5 {
         font-size: 1.5em;
     }
 
-    .portfoil-card {
+    .card {
         width: 40%;
     }
 }
@@ -196,12 +217,8 @@ h1, h2, h3, h4, h5 {
     .portfoil__container {
         flex-direction: column;
     }
-
-    .portfoil__title{
-        text-align: center;
-    }
     
-    .portfoil-card{
+    .card{
         width: 80%;
         margin: 20px 0 0;
     }
@@ -225,7 +242,7 @@ h1, h2, h3, h4, h5 {
         padding: 30px;
     }
 
-    .portfoil-card{
+    .card{
         width: 90%;
     }
 
@@ -243,15 +260,15 @@ h1, h2, h3, h4, h5 {
         font-size: 1em;
     }
 
-    .portfoil, .portfoil-card{
+    .portfoil, .card{
         padding: 15px;
     }
 
-    .portfoil-card__details, .portfoil-card__imageContainer {
+    .card__details{
         width: 70%;
     }
     
-    .portfoil-card__imageContainer{
+    .card__imageContainer{
         width: 25%;
     }
 
@@ -279,17 +296,17 @@ h1, h2, h3, h4, h5 {
         justify-content: space-around;
     }
 
-    .portfoil-card{
+    .card{
         flex-direction: column;
         text-align: center;
     }
 
-    .portfoil-card__details {
+    .card__details {
         width: 90%;
     }
 
-    .portfoil-card__imageContainer {
-        width: 50%;
+    .card__imageContainer {
+        width: 30%;
     }
 }
 
