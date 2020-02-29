@@ -15,7 +15,7 @@ const cards = [
         "imageAlt": "JIRA to Sheet" 
     },
     {
-        "title": "PlatziVideo (En desarrollos)",
+        "title": "PlatziVideo (En desarrollo)",
         "badge": "Web",
         "repo": "https://github.com/NickMano/platziVideo",
         "description": "Plataforma para mirar peliculas.",
