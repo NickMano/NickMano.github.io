@@ -1,0 +1,28 @@
+{
+  "name": "Portfoil",
+  "version": "1.0.0",
+  "description": "Pagina Personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick-m96/Nick-m96.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nick-m96/Nick-m96.github.io/issues"
+  },
+  "homepage": "https://github.com/Nick-m96/Nick-m96.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@storybook/html": "^5.3.14",
+    "babel-loader": "^8.0.6"
+  }
+}
