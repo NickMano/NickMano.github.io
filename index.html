@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nicolas Manograsso</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body class="background--black-russian">
+    <header class="header background--black-russian">
+      <figure class="logo">
+        <a href="#hero" class="link link--header">Nicolas Manograsso</a>
+      </figure>
+      <nav class="menu">
+        <ol class="header__list">
+          <li>
+            <a class="link link--header" href="#portfoil">Portafolio</a>
+          </li>
+          <li>
+            <a class="link link--header" href="https://github.com/NickMano/">Github</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="hero--fade-effect">
+        <h1 class="hero__name">Nicolas Manograsso</h1>
+        <h1 class="hero__title">Team Manager con pasion por el Desarrollo</h1>
+      </div>
+    </section>
+
+    <section id="portfoil" class="portfoil">
+      <h2 class="portfoil__title">Portafolios ( y Proyectos Destacados)</h2>
+      <div class="portfoil__container" id="prjt">
+        <!-- Load info from Javascript -->
+      </div>
+    </section>
+
+    <section id="certificates" class="portfoil">
+      <h2 class="portfoil__title">Certificados</h2>
+      <div class="portfoil__container" id="crtf">
+        <!-- Load info from Javascript -->
+      </div>
+    </section>
+    
+    <footer id="contact" class="footer">
+      <form action="/suscripcion/" class="contact">
+          <h3>¿Creamos algo juntos?</h3>
+          <input type="text" placeholder="Déjame tu mail" class="input">
+          <textarea rows="6" placeholder="Motivo" class="input input-textarea"></textarea>
+          <button class="button button--red" disabled>Enviar</button>
+        </form> 
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
