@@ -2,9 +2,10 @@
   "name": "Portfoil",
   "version": "1.0.0",
   "description": "Pagina Personal",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@storybook/html": "^5.3.14",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "live-server": "^1.2.1"
   }
 }
