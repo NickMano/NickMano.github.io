@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Nick-m96/Nick-m96.github.io/issues"
   },
-  "homepage": "https://github.com/Nick-m96/Nick-m96.github.io#readme",
+  "homepage": "https://github.com/Nick-m96/src/index.html",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.8.7",
