@@ -20,7 +20,7 @@ const setImage= (htmlClass, src, alt) => {
 }
 
 const setCard = (section, cardTitle, cardBadge, cardDescription, cardImageUrl, cardImageAlt, cardLink) => {
-    let article = setSection('article', 'card')
+    let article = setSection('a', 'card')
     section.appendChild(article)
     
     let figure = setSection('figure', 'card__imageContainer')
@@ -39,8 +39,7 @@ const setCard = (section, cardTitle, cardBadge, cardDescription, cardImageUrl, c
         divDetails.appendChild(badge)
     }
     if (cardLink) {
-        let link = setSection('p', 'card__link', `${cardLink}`)
-        divDetails.appendChild(link)
+        article.href = cardLink
     }
     if (cardDescription){
         let desc = setSection('p', 'project-description', `${cardDescription}`)
@@ -66,7 +65,8 @@ const setPortfoil = (section) => {
             project.description,
             project.imageUrl,
             project.imageAlt,
-            project.repo ? `<strong>Source code: </strong><a target="_blank" class="link link--black" href="${project.repo}">GitHub</a>` : null)
+            project.link
+            )
     })
 }
 
@@ -99,7 +99,7 @@ const setCertificates = async (section) => {
                 null,
                 course.badge,
                 'Badge',
-                `<strong>Ver diploma: </strong><a target="_blank" class="link link--black" href="${URL}${course.diploma_link}">Diploma</a>`)
+                `${URL}${course.diploma_link}`)
         });
 
     } catch (error) {

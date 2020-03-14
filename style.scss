@@ -159,6 +159,8 @@ h1, h2, h3, h4, h5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
+    color: black;
     transition: background 150ms ease-out 0s, border 150ms ease-out 0s, transform 150ms ease-out 0s;
     &:hover {
         border-color: $primary-color;
@@ -201,10 +203,6 @@ h1, h2, h3, h4, h5 {
     padding: 4px 6px;
     border-radius: 8px;
     font-size: 12px;
-}
-
-.card__link {
-    margin: 4px 0;
 }
 
 .card__imageContainer{
