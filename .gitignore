@@ -1,5 +1,9 @@
-# OS generated files #
-######################
 .DS_Store
-.DS_Store?
-.vscode/
+.vscode
+node_modules
+.cache
+dist
+.npm
+.eslintcache
+.env
+.storybook/
