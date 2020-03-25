@@ -1,12 +1,3 @@
-$primary-color: #121316;
-$light-red: #ff5460;
-
-$laptop-m: 1280px;
-$laptop-s: 1024px;
-$tablet: 769px;
-$mobile-m: 375px;
-$mobile-l: 425px;
-
 * {
     margin: 0;
 }
@@ -16,7 +7,7 @@ $mobile-l: 425px;
 }
 
 body {
-    font-family: "Nunito Sans", "SF Pro Display", Helvetica, sans-serif;
+    font-family: "Nunito Sans", Helvetica, sans-serif;
 }
 
 .header {
