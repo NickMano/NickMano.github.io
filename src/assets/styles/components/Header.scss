@@ -1,0 +1,40 @@
+@import '../App.scss';
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    @media screen and (max-width: $mobile-l) {
+        height: 50px;
+        .logo {
+            display: none;
+        }
+    }
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    @media screen and (max-width: $mobile-l) {
+        padding: 0;
+        width: inherit;
+        justify-content: space-around;
+    }
+}
+
+.menu {
+    display: flex;
+    padding-right:10px;
+    @media screen and (max-width: $mobile-l) {
+        width: 100%;
+    }
+}
+
+.link--header {
+    padding: 0 10px
+}

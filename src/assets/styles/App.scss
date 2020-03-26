@@ -1,0 +1,31 @@
+@import './Vars.scss';
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: $theme-font;
+    background: $primary-color;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+.background--black-russian {
+    background: $primary-color;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link--black {
+    color: black;
+}
