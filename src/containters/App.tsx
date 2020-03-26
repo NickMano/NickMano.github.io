@@ -4,13 +4,15 @@ import Hero from '../components/Hero'
 import Portfoil from '../components/Portfoil'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
-import {setCertificates, setPortfoil} from '../modules.js';
+import useInitialState from "../hooks/useInitialState.js";
+import setPortfoil from '../modules.js';
 
 import '../assets/styles/App.scss'
 
-const APICertificates = ''
+const APICertificates = 'https://platzi-user-api.jecsham.com/api/v1/getUserSummary/@NicoMano'
 
 const App: React.FC = () => {
+
 
     return(
         <div className="App">
@@ -21,7 +23,8 @@ const App: React.FC = () => {
             </Portfoil>
             
             <Portfoil title='Certificados'>
-                {/* {setCertificates()} */}
+                {    useInitialState(APICertificates).map( card => <Card key={card.id} {...card}/>) }
+
             </Portfoil>
 
             <Footer></Footer>

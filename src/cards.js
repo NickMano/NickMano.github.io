@@ -2,6 +2,7 @@ const cards = [
     {
         "title": "Team Manager",
         "badge": "meses",
+        "link": "",
         "description": "Lidero proyectos y gestiono el trabajo dentro del equipo del proyecto.",
         "imageUrl": "/src/assets/static/wolox.jpeg",
     },
