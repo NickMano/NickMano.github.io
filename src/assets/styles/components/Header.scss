@@ -26,3 +26,15 @@
         justify-content: space-around;
     }
 }
+
+.menu {
+    display: flex;
+    padding-right:10px;
+    @media screen and (max-width: $mobile-l) {
+        width: 100%;
+    }
+}
+
+.link--header {
+    padding: 0 10px
+}

@@ -1,9 +1,0 @@
-@import '../App.scss';
-
-.menu {
-    display: flex;
-    padding-right:10px;
-    @media screen and (max-width: $mobile-l) {
-        width: 100%;
-    }
-}

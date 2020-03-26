@@ -1,4 +1,4 @@
-@import "../App.scss"
+@import "../App.scss";
 
 .input {
     border-radius: 4px;
@@ -12,6 +12,7 @@
 .input-textarea {
     resize: none;
     height:initial;
+    height: 100px;
 }
 
 .button {
