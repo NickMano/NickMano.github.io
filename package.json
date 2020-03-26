@@ -1,25 +1,26 @@
 {
-  "name": "platziVideo",
+  "name": "Portfoil",
   "version": "1.0.0",
-  "description": "PlatziVideo is a platform to view videos make it with React",
+  "description": "Pagina Personal",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
+    "build": "react-scripts build",
     "start": "webpack-dev-server --open --mode development",
-    "server": "json-server db.json"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NickMano/platziVideo.git"
+    "url": "git+https://github.com/NickMano/NickMano.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NickMano/platziVideo/issues"
+    "url": "https://github.com/NickMano/NickMano.github.io/issues"
   },
-  "homepage": "https://github.com/NickMano/platziVideo#readme",
+  "homepage": "https://nickmano.github.io/NickMano.github.io",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
@@ -41,14 +42,15 @@
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
+    "gh-pages": "^2.2.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
   }
 }
