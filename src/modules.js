@@ -1,5 +1,6 @@
-import cards from "./cards.js";
+import {Proyectos, Abilities} from "./cards.js";
 
-const setPortfoil = () => cards
+const setPortfoil = () => Proyectos
+const setAbilities = () => Abilities
 
-export default setPortfoil
+export {setPortfoil, setAbilities}
