@@ -23,7 +23,7 @@ const Card = ({title, badge, link, description, imageUrl}) => {
                     <h4 className="badge-container">
                         <label className="badge">
                             <label className="badge">
-                                {(title == 'Team Manager') ? `${getMonthDiff()} ${badge}` : badge}
+                                {badge}
                             </label>
                         </label>
                     </h4>

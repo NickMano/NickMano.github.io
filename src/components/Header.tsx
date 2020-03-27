@@ -1,10 +1,12 @@
 import React from 'react'
 import '../assets/styles/components/Header.scss'
 
-const Header = () => (
-    <header className="header background--black-russian">
+const Header = (hasHero) => (
+    <header className="header">
       <figure className="logo">
-        <a href="#hero" className="link link--header">Nicolas Manograsso</a>
+        {(hasHero == true) &&
+          <a href="#hero" className="link link--header">Nicolas Manograsso</a>
+        }
       </figure>
       <nav className="menu">
         <ol className="header__list">

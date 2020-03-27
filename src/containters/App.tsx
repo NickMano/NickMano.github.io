@@ -5,7 +5,7 @@ import Portfoil from '../components/Portfoil'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 import useInitialState from "../hooks/useInitialState.js";
-import setPortfoil from '../modules.js';
+import {setPortfoil, setAbilities} from '../modules.js';
 
 import '../assets/styles/App.scss'
 
@@ -18,12 +18,12 @@ const App: React.FC = () => {
         <div className="App">
             <Header />
             <Hero />
-            <Portfoil title='Portafolios ( y Proyectos Destacados)'>
+            <Portfoil title='Proyectos Mas Destacados'>
                 {setPortfoil().map( card => <Card key={card.title} {...card}/>)}
             </Portfoil>
             
-            <Portfoil title='Certificados'>
-                {    useInitialState(APICertificates).map( card => <Card key={card.id} {...card}/>) }
+            <Portfoil title='Habilidades'>
+                {    setAbilities().map( card => <Card key={card.title} {...card}/>) }
 
             </Portfoil>
 
