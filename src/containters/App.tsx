@@ -18,7 +18,7 @@ const App: React.FC = () => {
         <div className="App">
             <Header />
             <Hero />
-            <Portfoil title='Portafolios ( y Proyectos Destacados)'>
+            <Portfoil title='Proyectos Mas Destacados'>
                 {setPortfoil().map( card => <Card key={card.title} {...card}/>)}
             </Portfoil>
             
