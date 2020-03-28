@@ -7,6 +7,13 @@ const Proyectos = [
         "imageUrl": "/src/assets/static/platziVideo.png",
     },
     {
+        "title": "Pokedex React (En desarrollo)",
+        "badge": "React",
+        "link": "https://github.com/NickMano/pokedex",
+        "description": "Pokedex web hecho con React.",
+        "imageUrl": "/src/assets/static/pokedex.png",
+    },
+    {
         "title": "Simon Says",
         "badge": "Javascript",
         "link": "https://github.com/NickMano/Simon",
