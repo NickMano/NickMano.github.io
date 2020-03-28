@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/NickMano.github.io/static/css/main.652a3f43.chunk.css",
-    "main.js": "/NickMano.github.io/static/js/main.ff2bef28.chunk.js",
-    "main.js.map": "/NickMano.github.io/static/js/main.ff2bef28.chunk.js.map",
+    "main.js": "/NickMano.github.io/static/js/main.bcc23ddb.chunk.js",
+    "main.js.map": "/NickMano.github.io/static/js/main.bcc23ddb.chunk.js.map",
     "runtime-main.js": "/NickMano.github.io/static/js/runtime-main.143de336.js",
     "runtime-main.js.map": "/NickMano.github.io/static/js/runtime-main.143de336.js.map",
     "static/js/2.079362fc.chunk.js": "/NickMano.github.io/static/js/2.079362fc.chunk.js",
     "static/js/2.079362fc.chunk.js.map": "/NickMano.github.io/static/js/2.079362fc.chunk.js.map",
     "index.html": "/NickMano.github.io/index.html",
-    "precache-manifest.dbe730997aa09698abe6990d07a36d1f.js": "/NickMano.github.io/precache-manifest.dbe730997aa09698abe6990d07a36d1f.js",
+    "precache-manifest.fdcc4a0f3a87f5fc0b92c74e11723ee8.js": "/NickMano.github.io/precache-manifest.fdcc4a0f3a87f5fc0b92c74e11723ee8.js",
     "service-worker.js": "/NickMano.github.io/service-worker.js",
     "static/css/main.652a3f43.chunk.css.map": "/NickMano.github.io/static/css/main.652a3f43.chunk.css.map",
     "static/js/2.079362fc.chunk.js.LICENSE.txt": "/NickMano.github.io/static/js/2.079362fc.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.143de336.js",
     "static/js/2.079362fc.chunk.js",
     "static/css/main.652a3f43.chunk.css",
-    "static/js/main.ff2bef28.chunk.js"
+    "static/js/main.bcc23ddb.chunk.js"
   ]
 }
