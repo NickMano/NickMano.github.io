@@ -18,13 +18,9 @@ const App: React.FC = () => {
         <div className="App">
             <Header />
             <Hero />
-            <Portfoil title='Proyectos Mas Destacados'>
-                {setPortfoil().map( card => <Card key={card.title} {...card}/>)}
-            </Portfoil>
             
-            <Portfoil title='Habilidades'>
-                {    setAbilities().map( card => <Card key={card.title} {...card}/>) }
-
+            <Portfoil title=''>
+                {setPortfoil().map( card => <Card key={card.title} {...card}/>)}
             </Portfoil>
 
             <Footer></Footer>

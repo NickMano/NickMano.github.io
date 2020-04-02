@@ -6,12 +6,9 @@ interface PortfoilProps {
     children: any
 }
 
-const Portfoil = ({title, children}:PortfoilProps) => (
+const Portfoil = ({children}:PortfoilProps) => (
     <section id="portfoil" className="portfoil">
-      <h2 className="portfoil__title">{title}</h2>
-      <div className="portfoil__container" id="prjt">
         {children}
-      </div>
     </section>
 ) 
 
