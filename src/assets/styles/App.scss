@@ -2,10 +2,10 @@
 
 * {
     margin: 0;
+    font-family: $theme-font;
 }
 
 body {
-    font-family: $theme-font;
     background: $primary-color;
 }
 
@@ -15,17 +15,4 @@ h1, h2, h3, h4, h5 {
 
 .background--black-russian {
     background: $primary-color;
-}
-
-.link {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-.link--black {
-    color: black;
 }
