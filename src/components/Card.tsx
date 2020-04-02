@@ -13,22 +13,12 @@ const Card = ({title, badge, link, description, imageUrl}) => {
     }
 
     return(
-        <a className="card" href={link}>
-            <figure className="card__imageContainer">
-                <img className="card__imageContainer--image" src={imageUrl} alt={title} />
-            </figure>
-            <div className="card__details">
-                <h3 className="card__title">{title}</h3>
-                { (badge != "") &&
-                    <h4 className="badge-container">
-                        <label className="badge">
-                            <label className="badge">
-                                {badge}
-                            </label>
-                        </label>
-                    </h4>
-                }
-                <p className="project-description">{description}</p>
+        <a className="card" href={link} 
+        // style={{backgroundImage: `url(${imageUrl})`}}
+        >
+            <div className="card__details" >
+                <h3 className="text--title">{title}</h3>
+                <p className="text--subtitle">{badge}</p>
             </div>
         </a>
     )
