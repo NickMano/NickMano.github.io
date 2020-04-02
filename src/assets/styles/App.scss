@@ -13,6 +13,27 @@ h1, h2, h3, h4, h5 {
     font-weight: normal;
 }
 
-.background--black-russian {
-    background: $primary-color;
+.text--title {
+    font-size: 3em;
+    line-height: 1.5;
+    @media screen and (max-width: $tablet) {
+        font-size: 2em;
+    }
+    @media screen and (max-width: $mobile-m) {
+        line-height: 0.9;
+        margin: 0 0 20px;
+        font-size: 1.5em ;
+    }
+}
+
+.text--subtitle {
+    color: $second-color;
+    font-size: 2em;
+    @media screen and (max-width: $laptop-m) {
+        font-size: 1.8em;
+    }
+    @media screen and (max-width: $tablet) {
+        font-size: 1.2em;
+        margin: 0 10px;
+    }
 }

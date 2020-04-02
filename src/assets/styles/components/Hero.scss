@@ -18,29 +18,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.hero__name {
-    font-size: 3em;
-    line-height: 1.5;
-    @media screen and (max-width: $tablet) {
-        font-size: 2em;
-    }
-    @media screen and (max-width: $mobile-m) {
-        line-height: 0.9;
-        margin: 0 0 20px;
-        font-size: 1.5em ;
-    }
-}
-
-.hero__title {
-    color: $second-color;
-    font-size: 2em;
-    text-align: center;
-    @media screen and (max-width: $laptop-m) {
-        font-size: 1.8em;
-    }
-    @media screen and (max-width: $tablet) {
-        font-size: 1.2em;
-        margin: 0 10px;
-    }
-}
