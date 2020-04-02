@@ -5,7 +5,7 @@ import Portfoil from '../components/Portfoil'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 import useInitialState from "../hooks/useInitialState.js";
-import {setPortfoil, setAbilities} from '../modules.js';
+import setPortfoil from '../modules.js';
 
 import '../assets/styles/App.scss'
 
