@@ -1,11 +1,11 @@
 const Proyectos = [
     {
-        "link": "https://github.com/NickMano/platziVideo",
-        "imageUrl": "/src/assets/static/platziVideo.png",
-    },
-    {
         "link": "https://github.com/NickMano/pokedex-react",
         "imageUrl": "/src/assets/static/pokedex.png",
+    },
+    {
+        "link": "https://github.com/NickMano/platziVideo",
+        "imageUrl": "/src/assets/static/platziVideo.png",
     },
     {
         "link": "https://github.com/NickMano/Simon",
