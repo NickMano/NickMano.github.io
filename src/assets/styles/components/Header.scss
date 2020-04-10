@@ -1,7 +1,7 @@
 @import '../App.scss';
 
 .header {
-    color: $second-color;
+    color: $gray-03;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@
 
 .link--header {
     padding: 0 10px;
-    color: $second-color;
+    color: $gray-03;
     text-decoration: none;
     text-align: center;
     &:hover {
