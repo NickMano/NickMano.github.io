@@ -2,7 +2,7 @@ import React from 'react'
 import '../assets/styles/components/Card.scss'
 import '../assets/styles/components/Badge.scss'
 
-const Card = ({title, badge, link, description, imageUrl}) => {
+const Card = ({link, imageUrl}) => {
     const getMonthDiff = () => {
         const TM = new Date(2019, 9, 3)
         const today = new Date()
@@ -14,13 +14,8 @@ const Card = ({title, badge, link, description, imageUrl}) => {
 
     return(
         <a className="card" href={link} 
-        // style={{backgroundImage: `url(${imageUrl})`}}
-        >
-            <div className="card__details" >
-                <h3 className="text--title">{title}</h3>
-                <p className="text--subtitle">{badge}</p>
-            </div>
-        </a>
+        style={{backgroundImage: `url(${imageUrl})`}}
+        />
     )
 }
 

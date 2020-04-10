@@ -1,23 +1,21 @@
 @import '../App.scss';
 
 .card {
-    width: 88%;
-    border-radius: 4px;
+    width: 80%;
+    border-radius: 8px;
     margin-bottom: 50px ;
     min-height: 750px;
-    padding-left: 20px;
+    padding-left: 8%;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
     background-color: #e2e2e2;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
+    background-size: 100% 100%;
     transition: background 150ms ease-out 0s, border 150ms ease-out 0s, transform 150ms ease-out 0s;
     &:hover {
-        transform: translate3d(0px, -3px, 0px);
-        opacity: 1;
+        transform: translate3d(0px, -4px, 0px);
     }
 
     @media screen and (max-width: $laptop-l) {
@@ -34,31 +32,10 @@
     @media screen and (max-width: $tablet) {
         width: 82%;
         padding: 15px;
-        min-height: 300px;
+        min-height: 240px;
     }
     @media screen and (max-width: $mobile-l) {
         margin-bottom: 20px ;
-        min-height: 220px;
+        min-height: 180px;
     }
-}
-
-.card__details {
-    flex-wrap: wrap;
-    width: 75%;
-    @media screen and (max-width: $mobile-l) {
-        width: 90%;
-    }
-}
-
-.card__imageContainer{
-    flex-wrap: wrap;
-    width: 20%;
-    @media screen and (max-width: $mobile-l) {
-        width: 30%;
-    }
-}
-
-.card__imageContainer--image {
-    width: 100%;
-    border-radius: 50%;
 }
