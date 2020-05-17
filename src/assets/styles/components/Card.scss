@@ -14,7 +14,7 @@
     background-size: 100% 100%;
     transition: background 150ms ease-out 0s, border 150ms ease-out 0s, transform 150ms ease-out 0s;
     &:hover {
-        transform: translate3d(0px, -4px, 0px);
+        transform: scale(1.025);
     }
 
     @media screen and (max-width: $laptop-l) {
@@ -32,6 +32,7 @@
         width: 82%;
         padding: 15px;
         min-height: 240px;
+        border-radius: 4px;
     }
     @media screen and (max-width: $mobile-l) {
         margin-bottom: 20px ;
