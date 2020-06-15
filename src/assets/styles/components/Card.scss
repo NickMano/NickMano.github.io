@@ -12,9 +12,11 @@
     background-color: #e2e2e2;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    transition: background 150ms ease-out 0s, border 150ms ease-out 0s, transform 150ms ease-out 0s;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14);
+    transition: background 150ms ease-out 0s, border 150ms ease-out 0s, transform 150ms ease-out 0s, box-shadow 150ms ease-out 0s;
     &:hover {
-        transform: scale(1.025);
+        transform: scale(1.016);
+        box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.14);
     }
 
     @media screen and (max-width: $laptop-l) {

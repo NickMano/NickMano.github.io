@@ -4,7 +4,7 @@ import '../assets/styles/App.scss'
 const NotFound = () => {
     return(
         <>
-            <p>404</p>
+            <h1 className="fullScreen">🤯 Page not found</h1>
         </>
 )}
 

@@ -6,19 +6,33 @@ import Card from '../components/Card'
 import '../assets/styles/App.scss'
 
 const Home = props => {
-    const {projects} = props
+    const {websites, games, apps, tools} = props
     return(
         <>
             <Hero />
-            <Portfoil title='Projects'>
-                {projects.map( card => <Card key={card.title} {...card}/>)}
-            </Portfoil>
+            <div id="portfoil">
+                <Portfoil title='- 🖥 Websites -'>
+                    {websites.map( card => <Card key={card.title} {...card}/>)}
+                </Portfoil>
+                <Portfoil title='- 🕹 Games -'>
+                    {games.map( card => <Card key={card.title} {...card}/>)}
+                </Portfoil>
+                <Portfoil title='- 📱 Apps -'>
+                    {apps.map( card => <Card key={card.title} {...card}/>)}
+                </Portfoil>
+                <Portfoil title='- 🛠 Tools -'>
+                    {tools.map( card => <Card key={card.title} {...card}/>)}
+                </Portfoil>
+            </div>
         </>
 )}
 
 const mapStateToProps = state => {
     return {
-        projects: state.projects
+        websites: state.websites,
+        games: state.games,
+        apps: state.apps,
+        tools: state.tools,
     }
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 import '../assets/styles/components/Header.scss'
 
 const Header = (hasHero) => (
@@ -11,7 +12,13 @@ const Header = (hasHero) => (
       <nav className="menu">
         <ol className="header__list">
           <li>
-            <a className="link--header" href="#portfoil">Portafolio</a>
+            <Link to="/" className="link--header">Works</Link>
+          </li>
+          <li>
+            <Link to="/about" className="link--header">About</Link>
+          </li>
+          <li style={{display: `none`}}>
+            <Link to="/culture" className="link--header">Culture</Link>
           </li>
           <li>
             <a className="link--header" href="https://github.com/NickMano/">Github</a>
