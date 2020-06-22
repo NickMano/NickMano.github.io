@@ -1,10 +1,11 @@
 import React from 'react'
 import '../assets/styles/App.scss'
+import SimpleMessage from '../components/SimpleMessage'
 
 const NotFound = () => {
     return(
         <>
-            <h1 className="fullScreen">🤯 Page not found</h1>
+            <SimpleMessage message='🤯 Page not found' />
         </>
 )}
 

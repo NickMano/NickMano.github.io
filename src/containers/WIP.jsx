@@ -1,10 +1,11 @@
 import React from 'react'
 import '../assets/styles/App.scss'
+import SimpleMessage from '../components/SimpleMessage'
 
 const WIP = () => {
     return(
         <>
-            <h1 className="fullScreen">🚗 Work in Progress...</h1>
+            <SimpleMessage message='🚗 Work in Progress...' />
         </>
 )}
 
