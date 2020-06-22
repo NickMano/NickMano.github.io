@@ -12,16 +12,16 @@ const Home = props => {
             <Hero />
             <div id="portfoil">
                 <Portfoil title='- 🖥 Websites -'>
-                    {websites.map( card => <Card key={card.title} {...card}/>)}
+                    {websites.map( card => <Card key={card.title} {...card} category='websites'/>)}
                 </Portfoil>
                 <Portfoil title='- 🕹 Games -'>
-                    {games.map( card => <Card key={card.title} {...card}/>)}
+                    {games.map( card => <Card key={card.title} {...card} category='games'/>)}
                 </Portfoil>
                 <Portfoil title='- 📱 Apps -'>
-                    {apps.map( card => <Card key={card.title} {...card}/>)}
+                    {apps.map( card => <Card key={card.title} {...card} category='apps'/>)}
                 </Portfoil>
                 <Portfoil title='- 🛠 Tools -'>
-                    {tools.map( card => <Card key={card.title} {...card}/>)}
+                    {tools.map( card => <Card key={card.title} {...card} category='tools'/>)}
                 </Portfoil>
             </div>
         </>
