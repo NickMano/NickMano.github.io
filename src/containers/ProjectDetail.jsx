@@ -1,27 +1,40 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import WIP from './WIP'
+import PrincipalImage from '../components/PrincipalImage'
+import InitialImage from '../components/InitialImage'
+import Button from '../components/Button'
 import '../assets/styles/App.scss'
-import NotFound from './NotFound'
 
 const ProjectDetail = props => {
     const category = props.match.params.category
     const projectName = props.match.params.name
     const projects = props.projects[props.match.params.category]
-    let notFound = false
     let project
-    if (projects === undefined) {
+    let images = []
+    let notFound
+
+    try {
+        project = projects.find( p => p.title == projectName) 
+        images = project.images
+        notFound = project === undefined || images === undefined
+    } catch (error) {
+        console.error("error", error)
         notFound = true
-    } else {
-        project = projects.find( p => p.title == projectName)
+        images = []
     }
-    
-    console.log("project", project)
 
     return(
         notFound
-        ? <NotFound />
+        ? <WIP />
         : <>
-            <img className="hero" src={project.hero} />
+            <PrincipalImage url={project.hero} />
+            <InitialImage url={project.initialImage} isInitialImage/>
+            <h1 className='text--title'>{project.title}</h1>
+            <h3 style={{textAlign: 'center'}} >{project.description}</h3>
+            <hr className='divider' />
+            {images.map(image => <InitialImage key={image} url={image}/> )}
+            <Button link={project.link}/>
         </>    
     )
 }
