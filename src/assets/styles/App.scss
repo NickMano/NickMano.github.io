@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5 {
 
 .text--title {
     color: $black;
+    text-align: center;
     font-size: 3.2em;
     line-height: 1.5;
     @media screen and (max-width: $tablet) {
@@ -29,6 +30,7 @@ h1, h2, h3, h4, h5 {
 
 .text--subtitle {
     color: $gray-03;
+    text-align: center;
     font-size: 2em;
     @media screen and (max-width: $laptop-m) {
         font-size: 1.8em;

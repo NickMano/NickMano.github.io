@@ -21,7 +21,7 @@ const Header = (hasHero) => (
             <Link to="/culture" className="link--header">Culture</Link>
           </li>
           <li>
-            <a className="link--header" href="https://github.com/NickMano/">Github</a>
+            <a className="link--header" target='_blank' href="https://github.com/NickMano/">Github</a>
           </li>
         </ol>
       </nav>
