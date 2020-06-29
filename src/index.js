@@ -13,14 +13,14 @@ const initialState = {
             "description": "This is a modern and minimalist pokedex",
             "link": "https://github.com/NickMano/pokedex-react",
             "imageUrl": "/src/assets/static/pokedex/pokedex.png",
-            "hero": "./pokedex/hero.png",
-            "initialImage": './pokedex/initialImage.png',
+            "hero": "/src/assets/static/pokedex/hero.png",
+            "initialImage": '/src/assets/static/pokedex/initialImage.png',
             "images": [
-                './pokedex/image-3.png',
-                './pokedex/image-1.png',
-                './pokedex/image-4.png',
-                './pokedex/image-2.png',,
-                './pokedex/image-6.png',
+                '/src/assets/static/pokedex/image-3.png',
+                '/src/assets/static/pokedex/image-1.png',
+                '/src/assets/static/pokedex/image-4.png',
+                '/src/assets/static/pokedex/image-2.png',,
+                '/src/assets/static/pokedex/image-6.png',
             ]
         },
         {
