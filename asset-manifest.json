@@ -1,38 +1,22 @@
 {
   "files": {
     "main.css": "/NickMano.github.io/static/css/main.2f4e5ab6.chunk.css",
-    "main.js": "/NickMano.github.io/static/js/main.773e362c.chunk.js",
-    "main.js.map": "/NickMano.github.io/static/js/main.773e362c.chunk.js.map",
+    "main.js": "/NickMano.github.io/static/js/main.3b8ed372.chunk.js",
+    "main.js.map": "/NickMano.github.io/static/js/main.3b8ed372.chunk.js.map",
     "runtime-main.js": "/NickMano.github.io/static/js/runtime-main.2194b333.js",
     "runtime-main.js.map": "/NickMano.github.io/static/js/runtime-main.2194b333.js.map",
     "static/js/2.dbc04dcd.chunk.js": "/NickMano.github.io/static/js/2.dbc04dcd.chunk.js",
     "static/js/2.dbc04dcd.chunk.js.map": "/NickMano.github.io/static/js/2.dbc04dcd.chunk.js.map",
     "index.html": "/NickMano.github.io/index.html",
-    "precache-manifest.301c17e9cac6d99d22a469d0e5b53811.js": "/NickMano.github.io/precache-manifest.301c17e9cac6d99d22a469d0e5b53811.js",
+    "precache-manifest.c233fc00e0858fcd55efc779395b5a3c.js": "/NickMano.github.io/precache-manifest.c233fc00e0858fcd55efc779395b5a3c.js",
     "service-worker.js": "/NickMano.github.io/service-worker.js",
     "static/css/main.2f4e5ab6.chunk.css.map": "/NickMano.github.io/static/css/main.2f4e5ab6.chunk.css.map",
-    "static/js/2.dbc04dcd.chunk.js.LICENSE.txt": "/NickMano.github.io/static/js/2.dbc04dcd.chunk.js.LICENSE.txt",
-    "static/media/NickestJump.png": "/NickMano.github.io/static/media/NickestJump.98be03ee.png",
-    "static/media/TLON.png": "/NickMano.github.io/static/media/TLON.15a766ce.png",
-    "static/media/hangmanpkm.png": "/NickMano.github.io/static/media/hangmanpkm.b77bc491.png",
-    "static/media/hero.png": "/NickMano.github.io/static/media/hero.3e822c2a.png",
-    "static/media/image-1.png": "/NickMano.github.io/static/media/image-1.600abdac.png",
-    "static/media/image-2.png": "/NickMano.github.io/static/media/image-2.f4e88391.png",
-    "static/media/image-3.png": "/NickMano.github.io/static/media/image-3.15d23788.png",
-    "static/media/image-4.png": "/NickMano.github.io/static/media/image-4.53580f22.png",
-    "static/media/image-5.png": "/NickMano.github.io/static/media/image-5.75fd01d4.png",
-    "static/media/image-6.png": "/NickMano.github.io/static/media/image-6.636acf4f.png",
-    "static/media/initialImage.png": "/NickMano.github.io/static/media/initialImage.8a195672.png",
-    "static/media/platziVideo.png": "/NickMano.github.io/static/media/platziVideo.b7859aeb.png",
-    "static/media/pokedex.png": "/NickMano.github.io/static/media/pokedex.61837a19.png",
-    "static/media/python.png": "/NickMano.github.io/static/media/python.e90f8c59.png",
-    "static/media/simon.png": "/NickMano.github.io/static/media/simon.7e6d4fbd.png",
-    "static/media/wbooks.png": "/NickMano.github.io/static/media/wbooks.18d74d92.png"
+    "static/js/2.dbc04dcd.chunk.js.LICENSE.txt": "/NickMano.github.io/static/js/2.dbc04dcd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2194b333.js",
     "static/js/2.dbc04dcd.chunk.js",
     "static/css/main.2f4e5ab6.chunk.css",
-    "static/js/main.773e362c.chunk.js"
+    "static/js/main.3b8ed372.chunk.js"
   ]
 }
