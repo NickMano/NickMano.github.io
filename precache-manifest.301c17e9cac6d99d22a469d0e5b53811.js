@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56a94d0cc99df8563624ed00dc380c5c",
+    "revision": "a03765cc24f9e95e72378f5b8c3fbdce",
     "url": "/NickMano.github.io/index.html"
   },
   {
-    "revision": "a45bc099574517c3e04e",
+    "revision": "ea943178beb07a500dbe",
     "url": "/NickMano.github.io/static/css/main.2f4e5ab6.chunk.css"
   },
   {
-    "revision": "c4cc80adff0ab880b779",
-    "url": "/NickMano.github.io/static/js/2.d0bbb548.chunk.js"
+    "revision": "2509847e27d991ac926b",
+    "url": "/NickMano.github.io/static/js/2.dbc04dcd.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/NickMano.github.io/static/js/2.d0bbb548.chunk.js.LICENSE.txt"
+    "url": "/NickMano.github.io/static/js/2.dbc04dcd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a45bc099574517c3e04e",
-    "url": "/NickMano.github.io/static/js/main.bc977b7c.chunk.js"
+    "revision": "ea943178beb07a500dbe",
+    "url": "/NickMano.github.io/static/js/main.773e362c.chunk.js"
   },
   {
     "revision": "21bbefc1903903c278c1",
