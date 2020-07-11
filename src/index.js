@@ -12,57 +12,57 @@ const initialState = {
             "title": "Pokedex",
             "description": "This is a modern and minimalist pokedex",
             "link": "https://github.com/NickMano/pokedex-react",
-            "imageUrl": "/src/assets/static/pokedex/pokedex.png",
-            "hero": "/src/assets/static/pokedex/hero.png",
-            "initialImage": '/src/assets/static/pokedex/initialImage.png',
+            "imageUrl": "/src/assets/static/pokedex/pokedex.webp",
+            "hero": "/src/assets/static/pokedex/hero.webp",
+            "initialImage": '/src/assets/static/pokedex/initialImage.webp',
             "images": [
-                '/src/assets/static/pokedex/image-3.png',
-                '/src/assets/static/pokedex/image-1.png',
-                '/src/assets/static/pokedex/image-4.png',
-                '/src/assets/static/pokedex/image-2.png',,
-                '/src/assets/static/pokedex/image-6.png',
+                '/src/assets/static/pokedex/image-3.webp',
+                '/src/assets/static/pokedex/image-1.webp',
+                '/src/assets/static/pokedex/image-4.webp',
+                '/src/assets/static/pokedex/image-2.webp',,
+                '/src/assets/static/pokedex/image-6.webp',
             ]
         },
         {
             "title": "PlatziVideo",
             "link": "https://github.com/NickMano/platziVideo",
-            "imageUrl": "/src/assets/static/platziVideo.png",
+            "imageUrl": "/src/assets/static/platziVideo.webp",
         },
         {
             "title": "Simon",
             "link": "https://github.com/NickMano/Simon",
-            "imageUrl": "/src/assets/static/simon.png",
+            "imageUrl": "/src/assets/static/simon.webp",
         }
     ],
     "games": [
         {
             "title": "TLON",
             "link": "https://github.com/NickMano/The-Legend-Of-Nickest",
-            "imageUrl": "/src/assets/static/TLON.png",
+            "imageUrl": "/src/assets/static/TLON.webp",
         },
         {
             "title": "Nickest-Jump",
             "link": "https://github.com/NickMano/Nickest-Jump",
-            "imageUrl": "/src/assets/static/NickestJump.png",
+            "imageUrl": "/src/assets/static/NickestJump.webp",
         },
         {
             "title": "Hangman-Pokemon",
             "link": "https://github.com/NickMano/Hangman-Pokemon",
-            "imageUrl": "/src/assets/static/hangmanpkm.png",
+            "imageUrl": "/src/assets/static/hangmanpkm.webp",
         },
     ],
     "apps": [
         {
             "title": "wBooks-iOS",
             "link": "https://github.com/NickMano/wBooks-ios",
-            "imageUrl": "/src/assets/static/wbooks.png",
+            "imageUrl": "/src/assets/static/wbooks.webp",
         }
     ],
     "tools": [
         {
             "title": "Jira-To-Sheet",
             "link": "https://github.com/NickMano/JIRA-to-Sheet",
-            "imageUrl": "/src/assets/static/python.png", 
+            "imageUrl": "/src/assets/static/python.webp", 
         },
     ]
 }
