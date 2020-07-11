@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c37d0531e0a734e226ff1c55557bea6",
+    "revision": "0347c73f9600550faf110fa821bb9cdf",
     "url": "/NickMano.github.io/index.html"
   },
   {
-    "revision": "cc6cf67585fbb3f1ef0c",
+    "revision": "8f1c2060272246407458",
     "url": "/NickMano.github.io/static/css/main.2f4e5ab6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NickMano.github.io/static/js/2.dbc04dcd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cc6cf67585fbb3f1ef0c",
-    "url": "/NickMano.github.io/static/js/main.3b8ed372.chunk.js"
+    "revision": "8f1c2060272246407458",
+    "url": "/NickMano.github.io/static/js/main.05693bf9.chunk.js"
   },
   {
     "revision": "21bbefc1903903c278c1",
