@@ -73,14 +73,12 @@ const initialState = {
             "imageUrl": "/src/assets/static/hangmanpkm.webp",
         },
     ],
-    "apps": [
+    "others": [
         {
             "title": "wBooks-iOS",
             "link": "https://github.com/NickMano/wBooks-ios",
             "imageUrl": "/src/assets/static/wbooks.webp",
-        }
-    ],
-    "tools": [
+        },
         {
             "title": "Jira-To-Sheet",
             "link": "https://github.com/NickMano/JIRA-to-Sheet",

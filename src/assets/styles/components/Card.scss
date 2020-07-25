@@ -1,10 +1,10 @@
 @import '../App.scss';
 
 .card {
-    width: 88%;
+    width: 40%;
     border-radius: 8px;
     margin-bottom: 50px ;
-    min-height: 750px;
+    padding-top: 22.5%;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -19,25 +19,13 @@
         box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.14);
     }
 
-    @media screen and (max-width: $laptop-l) {
-        min-height: 650px;
-    }
-
-    @media screen and (max-width: $laptop-m) {
-        min-height: 600px;
-    }
-
-    @media screen and (max-width: $laptop-s) {
-        min-height: 450px;
-    }
+    
     @media screen and (max-width: $tablet) {
         width: 82%;
-        padding: 15px;
-        min-height: 240px;
+        padding-top: 46.125%;
         border-radius: 4px;
     }
     @media screen and (max-width: $mobile-l) {
         margin-bottom: 20px ;
-        min-height: 180px;
     }
 }
