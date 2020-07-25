@@ -45,26 +45,26 @@ const initialState = {
             "description": "Infinite runner like Chrome Dinosaur",
             "link": "https://nicomano.itch.io/nickest-jump",
             "imageUrl": "/src/assets/static/nickest-jump/NickestJump.webp",
-            "hero": "/src/assets/static/nickest-jump/hero.png",
-            "initialImage": '/src/assets/static/nickest-jump/initialImage.png',
+            "hero": "/src/assets/static/nickest-jump/hero.webp",
+            "initialImage": '/src/assets/static/nickest-jump/initialImage.webp',
             "images": [
-                '/src/assets/static/nickest-jump/image-4.png',
-                '/src/assets/static/nickest-jump/image-2.png',
-                '/src/assets/static/nickest-jump/image-3.png',
-                '/src/assets/static/nickest-jump/image-1.png',
+                '/src/assets/static/nickest-jump/image-4.webp',
+                '/src/assets/static/nickest-jump/image-2.webp',
+                '/src/assets/static/nickest-jump/image-3.webp',
+                '/src/assets/static/nickest-jump/image-1.webp',
             ]
         },
         {
             "title": "Ping-Pong",
             "description": "The classic game of Ping-Pong now on web",
             "link": "https://nicomano.itch.io/ping-pong",
-            "imageUrl": "/src/assets/static/ping-pong/ping-pong.png",
-            "hero": "/src/assets/static/ping-pong/hero.png",
-            "initialImage": '/src/assets/static/ping-pong/initialImage.png',
+            "imageUrl": "/src/assets/static/ping-pong/ping-pong.webp",
+            "hero": "/src/assets/static/ping-pong/hero.webp",
+            "initialImage": '/src/assets/static/ping-pong/initialImage.webp',
             "images": [
-                '/src/assets/static/ping-pong/image-3.png',
-                '/src/assets/static/ping-pong/image-1.png',
-                '/src/assets/static/ping-pong/image-2.png',
+                '/src/assets/static/ping-pong/image-3.webp',
+                '/src/assets/static/ping-pong/image-1.webp',
+                '/src/assets/static/ping-pong/image-2.webp',
             ]
         },
         {
