@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import WIP from './WIP'
+import Header from '../components/Header'
 import PrincipalImage from '../components/PrincipalImage'
 import InitialImage from '../components/InitialImage'
 import Button from '../components/Button'
@@ -28,6 +29,7 @@ const ProjectDetail = props => {
         notFound
         ? <WIP />
         : <>
+            <Header hasLink={true} />
             <PrincipalImage url={project.hero} />
             <InitialImage url={project.initialImage} isInitialImage/>
             <h1 className='text--title'>{project.title}</h1>

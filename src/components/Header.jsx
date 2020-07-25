@@ -2,12 +2,14 @@ import React from 'react'
 import {Link} from "react-router-dom";
 import '../assets/styles/components/Header.scss'
 
-const Header = (hasHero) => (
+const Header = ({hasLink}) => (
     <header className="header">
       <figure className="logo">
-        {(hasHero == true) &&
-          <a href="#hero" className="link--header">Nicolas Manograsso</a>
+        { (hasLink == true) 
+          ? <Link to="/" className="link--header">NICO MANO</Link>
+          : <></>
         }
+
       </figure>
       <nav className="menu">
         <ol className="header__list">

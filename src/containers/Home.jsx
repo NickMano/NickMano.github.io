@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Hero from '../components/Hero'
+import Header from '../components/Header'
 import Portfoil from '../components/Portfoil'
 import Card from '../components/Card'
 import '../assets/styles/App.scss'
@@ -9,6 +10,7 @@ const Home = props => {
     const {websites, games, apps, tools} = props
     return(
         <>
+            <Header />
             <Hero />
             <div id="portfoil">
                 <Portfoil title='- 🖥 Websites -'>
