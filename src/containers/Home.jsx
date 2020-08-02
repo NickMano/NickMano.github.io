@@ -20,7 +20,7 @@ const Home = props => {
                     {websites.map( card => <Card key={card.title} {...card} category='websites'/>)}
                 </Portfoil>
                 <Portfoil title='- 📱 More -'>
-                    {others.map( card => <Card key={card.title} {...card} category='apps'/>)}
+                    {others.map( card => <Card key={card.title} {...card} category='others'/>)}
                 </Portfoil>
             </div>
         </>
