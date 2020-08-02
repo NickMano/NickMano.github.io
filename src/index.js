@@ -45,9 +45,17 @@ const initialState = {
     ],
     "games": [
         {
-            "title": "TLON",
+            "title": "The-Legend-Of-Nickest",
             "link": "https://github.com/NickMano/The-Legend-Of-Nickest",
-            "imageUrl": "/src/assets/static/TLON.webp",
+            "imageUrl": "/src/assets/static/tlon/TLON.webp",
+            "description": "Game of platform and action, inspired by Mario and Zelda",
+            "hero": "/src/assets/static/tlon/hero.webp",
+            "initialImage": '/src/assets/static/tlon/initialImage.webp',
+            "images": [
+                '/src/assets/static/tlon/image-1.webp',
+                '/src/assets/static/tlon/image-2.webp',
+                '/src/assets/static/tlon/image-4.webp',
+            ]
         },
         {
             "title": "Nickest-Jump",
