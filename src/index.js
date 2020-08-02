@@ -79,7 +79,11 @@ const initialState = {
         {
             "title": "Hangman-Pokemon",
             "link": "https://github.com/NickMano/Hangman-Pokemon",
-            "imageUrl": "/src/assets/static/hangmanpkm.webp",
+            "description": "We must guess the pokemon game. Only the 1 generation",
+            "imageUrl": "/src/assets/static/hangmanpkm/hangmanpkm.webp",
+            "hero": "/src/assets/static/hangmanpkm/hero.webp",
+            "initialImage": '/src/assets/static/hangmanpkm/initialImage.webp',
+            "images": []
         },
     ],
     "others": [
