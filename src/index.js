@@ -90,7 +90,13 @@ const initialState = {
         {
             "title": "wBooks-iOS",
             "link": "https://github.com/NickMano/wBooks-ios",
-            "imageUrl": "/src/assets/static/wbooks.webp",
+            "imageUrl": "/src/assets/static/wbooks/wbooks.webp",
+            "description": "wBooks is a test application that manages book reservations.",
+            "hero": "/src/assets/static/wbooks/hero.webp",
+            "initialImage": '/src/assets/static/wbooks/initialImage.webp',
+            "images": [
+                '/src/assets/static/wbooks/image-1.webp',
+            ]
         },
         {
             "title": "Jira-To-Sheet",
