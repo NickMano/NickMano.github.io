@@ -29,9 +29,18 @@ const initialState = {
             "imageUrl": "/src/assets/static/platziVideo.webp",
         },
         {
-            "title": "Simon",
-            "link": "https://github.com/NickMano/Simon",
-            "imageUrl": "/src/assets/static/simon.webp",
+            "title": "Simon Says",
+            "description": "Memorize the sequence to win",
+            "link": "https://nicomano-simon.netlify.app/",
+            "imageUrl": "/src/assets/static/simon/simon.webp",
+            "hero": "/src/assets/static/simon/hero-1.webp",
+            "initialImage": '/src/assets/static/simon/initialImage.webp',
+            "images": [
+                '/src/assets/static/simon/image-1.webp',
+                '/src/assets/static/simon/image-2.webp',
+                '/src/assets/static/simon/image-3.webp',
+                '/src/assets/static/simon/image-4.webp',
+            ]
         }
     ],
     "games": [
