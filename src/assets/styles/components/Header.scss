@@ -1,45 +1,46 @@
-@import '../App.scss';
+@import "../App.scss";
 
 .header {
-    color: $gray-03;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 48px;
-    width: 100%;
-    background-color: transparent;
-    @media screen and (max-width: $mobile-l) {
-        height: 50px;
-        .logo {
-            display: none;
-        }
-    }
-}
+  background-color: $color-black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 100%;
 
-.header__list {
+  @media screen and (max-width: $mobile-l) {
+    height: 50px;
+    .logo {
+      display: none;
+    }
+  }
+
+  &__list {
     list-style: none;
     display: flex;
     @media screen and (max-width: $mobile-l) {
-        padding: 0;
-        width: inherit;
-        justify-content: space-around;
+      padding: 0;
+      width: inherit;
+      justify-content: space-around;
     }
+  }
 }
 
 .menu {
-    display: flex;
-    padding-right:10px;
-    @media screen and (max-width: $mobile-l) {
-        width: 100%;
-    }
+  display: flex;
+  padding-right: 10px;
+  @media screen and (max-width: $mobile-l) {
+    width: 100%;
+  }
 }
 
 .link--header {
-    padding: 0 10px;
-    color: $gray-03;
-    text-decoration: none;
-    text-align: center;
-    &:hover {
-        text-decoration: underline;
-    }
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    text-decoration: underline;
+  }
 }

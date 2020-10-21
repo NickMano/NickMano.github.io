@@ -1,47 +1,51 @@
-@import './Vars.scss';
+@import "./Vars.scss";
 
 * {
-    margin: 0;
-    font-family: $theme-font;
+  margin: 0;
+  font-family: $theme-font;
 }
 
 body {
-    background: white;
+  background: white;
 }
 
-h1, h2, h3, h4, h5 {
-    font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
 }
 
 .text--title {
-    color: $black;
-    text-align: center;
-    font-size: 3.2em;
-    line-height: 1.5;
-    @media screen and (max-width: $tablet) {
-        font-size: 2.4em;
-    }
-    @media screen and (max-width: $mobile-m) {
-        line-height: 0.9;
-        margin: 0 0 20px;
-        font-size: 1.6em ;
-    }
+  color: $color-black;
+  text-align: center;
+  font-size: 3.2em;
+  line-height: 1.5;
+  @media screen and (max-width: $tablet) {
+    font-size: 2.4em;
+  }
+  @media screen and (max-width: $mobile-m) {
+    line-height: 0.9;
+    margin: 0 0 20px;
+    font-size: 1.6em;
+  }
 }
 
 .text--subtitle {
-    color: $gray-03;
-    text-align: center;
-    font-size: 2em;
-    @media screen and (max-width: $laptop-m) {
-        font-size: 1.8em;
-    }
-    @media screen and (max-width: $tablet) {
-        font-size: 1.2em;
-        margin: 0 10px;
-    }
+  color: $color-gray;
+  text-align: center;
+  font-size: 2em;
+  @media screen and (max-width: $laptop-m) {
+    font-size: 1.8em;
+  }
+  @media screen and (max-width: $tablet) {
+    font-size: 1.2em;
+    margin: 0 10px;
+  }
 }
 
 .divider {
-    width: 64%;
-    margin: 32px auto;
+  width: 64%;
+  margin: 32px auto;
 }
