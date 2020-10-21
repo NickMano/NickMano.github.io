@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/styles/components/PrincipalImage.scss'
+import '../styles/components/PrincipalImage.scss'
 
 const PrincipalImage = ({url}) => (
     <>

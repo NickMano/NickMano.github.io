@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/styles/components/Hero.scss'
+import '../styles/components/Hero.scss'
 
 const Hero = () => (
     <section id="hero" className="hero">

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/SimpleMessage.scss';
+import '../styles/components/SimpleMessage.scss';
 
 const SimpleMessage = ({message}) => (
         <>

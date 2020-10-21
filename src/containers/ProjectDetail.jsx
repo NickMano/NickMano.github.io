@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import PrincipalImage from '../components/PrincipalImage'
 import InitialImage from '../components/InitialImage'
 import Button from '../components/Button'
-import '../assets/styles/App.scss'
+import '../styles/App.scss'
 
 const ProjectDetail = props => {
     const category = props.match.params.category

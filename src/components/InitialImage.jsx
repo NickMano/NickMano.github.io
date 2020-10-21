@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/styles/components/InitialImage.scss'
+import '../styles/components/InitialImage.scss'
 
 const InitialImage = props => {
     const {url, isInitialImage} = props

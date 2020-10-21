@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import Header from '../components/Header'
 import Portfoil from '../components/Portfoil'
 import Card from '../components/Card'
-import '../assets/styles/App.scss'
+import '../styles/App.scss'
 
 const Home = props => {
     const {websites, games, others} = props

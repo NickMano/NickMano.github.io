@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../assets/styles/components/Button.scss'
+import '../styles/components/Button.scss'
 
 const Button = ({link}) => (
     <div className='button-container'>

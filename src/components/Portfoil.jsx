@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/Portfoil.scss';
+import '../styles/components/Portfoil.scss';
 
 const Portfoil = ({title, children}) => (
     <section id={title} className="portfoil">
