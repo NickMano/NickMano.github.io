@@ -1,8 +1,12 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import {withRouter} from 'react-router'
 import '../styles/components/Header.scss'
 
-const Header = ({hasLink}) => (
+const Header = props => {
+  const hasLink = props.history.location.pathname != '/'
+
+  return(
     <header className="header">
       <figure className="logo">
         { (hasLink == true) 
@@ -28,6 +32,6 @@ const Header = ({hasLink}) => (
         </ol>
       </nav>
     </header>
-) 
-
-export default Header
+  ) 
+}
+export default withRouter(Header)
