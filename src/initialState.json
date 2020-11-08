@@ -27,25 +27,6 @@
                 "/src/images/pokedex/image-2.webp",
                 "/src/images/pokedex/image-6.webp"
             ]
-        },
-        {
-            "title": "PlatziVideo",
-            "link": "https://github.com/NickMano/platziVideo",
-            "imageUrl": "/src/images/platziVideo.webp"
-        },
-        {
-            "title": "Simon Says",
-            "description": "Memorize the sequence to win",
-            "link": "https://nicomano-simon.netlify.app/",
-            "imageUrl": "/src/images/simon/simon.webp",
-            "hero": "/src/images/simon/hero-1.webp",
-            "initialImage": "/src/images/simon/initialImage.webp",
-            "images": [
-                "/src/images/simon/image-1.webp",
-                "/src/images/simon/image-2.webp",
-                "/src/images/simon/image-3.webp",
-                "/src/images/simon/image-4.webp"
-            ]
         }
     ],
     "games": [
@@ -88,15 +69,6 @@
                 "/src/images/ping-pong/image-1.webp",
                 "/src/images/ping-pong/image-2.webp"
             ]
-        },
-        {
-            "title": "Hangman-Pokemon",
-            "link": "https://github.com/NickMano/Hangman-Pokemon",
-            "description": "We must guess the pokemon game. Only the 1 generation",
-            "imageUrl": "/src/images/hangmanpkm/hangmanpkm.webp",
-            "hero": "/src/images/hangmanpkm/hero.webp",
-            "initialImage": "/src/images/hangmanpkm/initialImage.webp",
-            "images": []
         }
     ],
     "others": [
