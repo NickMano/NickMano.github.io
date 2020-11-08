@@ -1,11 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../styles/components/Button.scss'
+import React from 'react';
+import '../styles/components/Button.scss';
+import PropTypes from 'prop-types';
 
-const Button = ({link}) => (
-    <div className='button-container'>
-        <a className='button' href={link} target='_blank'>See More</a>
+const Button = ({ link }) => {
+  const textButton = 'See More';
+  return (
+    <div className="button-container">
+      <a className="button" href={link} target="_blank" rel="noreferrer">{textButton}</a>
     </div>
-)
+  );
+};
 
-export default Button
+Button.propTypes = {
+  link: PropTypes.string.isRequired,
+};
+
+export default Button;
