@@ -3,11 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -40,11 +40,11 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: { 
+            options: {
               name: 'assets/[hash].[ext]',
               esModule: false,
-           },
-          }
+            },
+          },
         ],
       },
     ],
