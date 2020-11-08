@@ -8,7 +8,6 @@ const Card = ({ category, card }) => (
     to={`/${category}/${card.title}`}
     className="card"
     style={{ backgroundImage: `url(${card.imageUrl})` }}
-
   />
 );
 

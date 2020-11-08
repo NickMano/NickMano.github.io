@@ -1,47 +1,51 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import WIP from './WIP'
-import PrincipalImage from '../components/PrincipalImage'
-import InitialImage from '../components/InitialImage'
-import Button from '../components/Button'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import WIP from './WIP';
+import '../styles/components/PrincipalImage.scss';
+import InitialImage from '../components/InitialImage';
+import Button from '../components/Button';
 
-const ProjectDetail = props => {
-    const category = props.match.params.category
-    const projectName = props.match.params.name
-    const projects = props.projects[props.match.params.category]
-    let project
-    let images = []
-    let notFound
+const ProjectDetail = (props) => {
+  const { projects } = props;
+  const projectName = useParams().name;
+  const category = projects[useParams().category];
+  let project;
+  let images = [];
+  let notFound;
 
-    try {
-        project = projects.find( p => p.title == projectName) 
-        images = project.images
-        notFound = project === undefined || images === undefined
-    } catch (error) {
-        console.error("error", error)
-        notFound = true
-        images = []
-    }
+  try {
+    project = category.find((p) => p.title === projectName);
+    images = project.images;
+    notFound = project === undefined || images === undefined;
+  } catch (error) {
+    notFound = true;
+    images = [];
+  }
 
-    return(
-        notFound
-        ? <WIP />
-        : <>
-            <PrincipalImage url={project.hero} />
-            <InitialImage url={project.initialImage} isInitialImage/>
-            <h1 className='text--title'>{project.title}</h1>
-            <h3 style={{textAlign: 'center'}} >{project.description}</h3>
-            <hr className='divider' />
-            {images.map(image => <InitialImage key={image} url={image}/> )}
-            <Button link={project.link}/>
-        </>    
-    )
-}
+  if (notFound) {
+    return <WIP />;
+  }
 
-const mapStateToProps = state => {
-    return {
-        projects: state,
-    }
-}
+  return (
+    <>
+      <img className="principal-image" src={project.hero} alt="principal" />
+      <h1 className="text--title">{project.title}</h1>
+      <h3 style={{ textAlign: 'center' }}>{project.description}</h3>
+      <hr className="divider" />
+      {images.map((image) => <InitialImage key={image} url={image} />)}
+      <Button link={project.link} />
+    </>
+  );
+};
 
-export default connect(mapStateToProps, null)(ProjectDetail)
+ProjectDetail.propTypes = {
+  projects: PropTypes.objectOf(PropTypes.array).isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  projects: state,
+});
+
+export default connect(mapStateToProps, null)(ProjectDetail);
