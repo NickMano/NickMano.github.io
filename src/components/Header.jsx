@@ -1,21 +1,21 @@
-import React from 'react'
-import {Link} from "react-router-dom";
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import {withRouter} from 'react-router'
-import '../styles/components/Header.scss'
+import { withRouter } from 'react-router';
+import '../styles/components/Header.scss';
 
-const Header = props => {
-  const hasLink = props.history.location.pathname != '/'
+const Header = () => {
+  const hasLink = useLocation().pathname !== '/';
 
-  return(
-    <header className="header">
+  return (
+    <nav className="header">
       <figure className="logo">
-        { (hasLink == true) 
+        { (hasLink === true)
           ? <Link to="/" className="link--header">NICO MANO</Link>
-          : <></>
-        }
+          : <></>}
 
       </figure>
-      <nav className="menu">
+      <section className="menu">
         <ol className="header__list">
           <li>
             <Link to="/" className="link--header">Works</Link>
@@ -23,15 +23,15 @@ const Header = props => {
           <li>
             <Link to="/about" className="link--header">About</Link>
           </li>
-          <li style={{display: `none`}}>
+          <li style={{ display: 'none' }}>
             <Link to="/culture" className="link--header">Culture</Link>
           </li>
           <li>
-            <a className="link--header" target='_blank' href="https://github.com/NickMano/">Github</a>
+            <a className="link--header" target="_blank" rel="noreferrer" href="https://github.com/NickMano/">Github</a>
           </li>
         </ol>
-      </nav>
-    </header>
-  ) 
-}
-export default withRouter(Header)
+      </section>
+    </nav>
+  );
+};
+export default withRouter(Header);
