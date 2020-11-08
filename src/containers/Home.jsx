@@ -1,34 +1,40 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import Hero from '../components/Hero'
-import Portfoil from '../components/Portfoil'
-import Card from '../components/Card'
+import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import Hero from '../components/Hero';
+import Briefcase from '../components/Briefcase';
+import Card from '../components/Card';
 
-const Home = props => {
-    const {websites, games, others} = props
-    return(
-        <>
-            <Hero />
-            <div id="portfoil">
-                <Portfoil title='- 🖥 Websites -'>
-                    {websites.map( card => <Card key={card.title} {...card} category='websites'/>)}
-                </Portfoil>
-                <Portfoil title='- 🕹 Games -'>
-                    {games.map( card => <Card key={card.title} {...card} category='games'/>)}
-                </Portfoil>
-                <Portfoil title='- 📱 More -'>
-                    {others.map( card => <Card key={card.title} {...card} category='others'/>)}
-                </Portfoil>
-            </div>
-        </>
-)}
+const Home = (props) => {
+  const { websites, games, others } = props;
+  return (
+    <>
+      <Hero />
+      <div id="briefcase">
+        <Briefcase title="- 🖥 Websites -">
+          {websites.map((card) => <Card key={card.title} card={card} category="websites" />)}
+        </Briefcase>
+        <Briefcase title="- 🕹 Games -">
+          {games.map((card) => <Card key={card.title} card={card} category="games" />)}
+        </Briefcase>
+        <Briefcase title="- 📱 More -">
+          {others.map((card) => <Card key={card.title} card={card} category="others" />)}
+        </Briefcase>
+      </div>
+    </>
+  );
+};
 
-const mapStateToProps = state => {
-    return {
-        websites: state.websites,
-        games: state.games,
-        others: state.others,
-    }
-}
+Home.propTypes = {
+  websites: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  games: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  others: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+};
 
-export default connect(mapStateToProps, null)(Home)
+const mapStateToProps = (state) => ({
+  websites: state.websites,
+  games: state.games,
+  others: state.others,
+});
+
+export default connect(mapStateToProps, null)(Home);

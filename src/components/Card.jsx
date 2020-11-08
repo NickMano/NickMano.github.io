@@ -3,13 +3,20 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../styles/components/Card.scss';
 
-const Card = ({ title, imageUrl, category }) => (
-  <Link to={`/${category}/${title}`} className="card" style={{ backgroundImage: `url(${imageUrl})` }} />
+const Card = ({ category, card }) => (
+  <Link
+    to={`/${category}/${card.title}`}
+    className="card"
+    style={{ backgroundImage: `url(${card.imageUrl})` }}
+
+  />
 );
 
 Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  card: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    imageUrl: PropTypes.string.isRequired,
+  }).isRequired,
   category: PropTypes.string.isRequired,
 };
 
