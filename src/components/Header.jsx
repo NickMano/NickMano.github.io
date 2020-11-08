@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { withRouter } from 'react-router';
 import '../styles/components/Header.scss';
 
