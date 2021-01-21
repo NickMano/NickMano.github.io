@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import WIP from './WIP';
 import NotFound from './NotFound';
 import '../styles/components/PrincipalImage.scss';
@@ -20,8 +18,6 @@ const ProjectDetail = () => {
   const [project, setProject] = useState({})
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
-
-  let images = [];
 
   useEffect(() => {
     setLoading(true)
