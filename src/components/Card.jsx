@@ -5,7 +5,7 @@ import '../styles/components/Card.scss';
 
 const Card = ({ category, card }) => (
   <Link
-    to={`/${category}/${card.title}`}
+    to={`/${category}/${card._id}`}
     className="card"
     style={{ backgroundImage: `url(${card.imageUrl})` }}
   />

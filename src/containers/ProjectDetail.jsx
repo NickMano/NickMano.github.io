@@ -1,31 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import WIP from './WIP';
+import NotFound from './NotFound';
 import '../styles/components/PrincipalImage.scss';
 import InitialImage from '../components/InitialImage';
 import Button from '../components/Button';
 
-const ProjectDetail = (props) => {
-  const { projects } = props;
-  const projectName = useParams().name;
-  const category = projects[useParams().category];
-  let project;
-  let images = [];
-  let notFound;
+const getProjectById = async (id) => {
+  const res = await fetch(`https://fathomless-plateau-37162.herokuapp.com/api/projects/${id}`)
+  const data = await res.json()
+  const project = data.data
+  return project
+}
 
-  try {
-    project = category.find((p) => p.title === projectName);
-    images = project.images;
-    notFound = project === undefined || images === undefined;
-  } catch (error) {
-    notFound = true;
-    images = [];
+const ProjectDetail = () => {
+  const projectId = useParams().name;
+  const [project, setProject] = useState({})
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(false)
+
+  let images = [];
+
+  useEffect(() => {
+    setLoading(true)
+    getProjectById(projectId)
+    .then(data => {
+      setLoading(false)
+      
+      if(Object.entries(data).length === 0 || !data) {
+        setError(true)
+        console.log('error');
+      } else {
+        setProject(data)
+      }
+    })
+    
+  }, [])
+
+  if (error) {
+    return <NotFound />;
   }
 
-  if (notFound) {
-    return <WIP />;
+  if (project.inProgress === true) {
+    return <WIP />
   }
 
   return (
@@ -34,18 +53,10 @@ const ProjectDetail = (props) => {
       <h1 className="text--title">{project.title}</h1>
       <h3 style={{ textAlign: 'center' }}>{project.description}</h3>
       <hr className="divider" />
-      {images.map((image) => <InitialImage key={image} url={image} />)}
+      {project?.images?.map((image) => <InitialImage key={image} url={image} />)}
       <Button link={project.link} />
     </>
   );
 };
 
-ProjectDetail.propTypes = {
-  projects: PropTypes.objectOf(PropTypes.array).isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  projects: state,
-});
-
-export default connect(mapStateToProps, null)(ProjectDetail);
+export default ProjectDetail;
