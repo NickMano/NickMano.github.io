@@ -4,31 +4,54 @@ import Briefcase from '../components/Briefcase';
 import Card from '../components/Card';
 
 const getProjects = async () => {
-  const res = await fetch('https://fathomless-plateau-37162.herokuapp.com/api/projects')
-  const data = await res.json()
-  const projects = data.data
-  return projects
-}
+  const res = await fetch('https://fathomless-plateau-37162.herokuapp.com/api/projects');
+  const data = await res.json();
+  const projects = data.data;
+  return projects;
+};
 
-const Home = (props) => {
-  const { others } = props;
-  const [websites, setWebsites] = useState([])
-  const [games, setGames] = useState([])
-  const [apps, setApps] = useState([])
+const Home = () => {
+  const [websites, setWebsites] = useState([]);
+  const [games, setGames] = useState([]);
+  const [apps, setApps] = useState([]);
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
+    setLoading(true);
     getProjects()
-    .then( data => {
-      const websitesFiltered = data.filter(project => project.category == 'website')
-      setWebsites(websitesFiltered)
+      .then((data) => {
+        const websitesFiltered = data.filter((project) => project.category === 'website');
+        setWebsites(websitesFiltered);
 
-      const gamesFiltered = data.filter(project => project.category == 'game')
-      setGames(gamesFiltered)
+        const gamesFiltered = data.filter((project) => project.category === 'game');
+        setGames(gamesFiltered);
 
-      const appsFiltered = data.filter(project => project.category == 'app')
-      setApps(appsFiltered)
-    }
-      )
-    }, [])
+        const appsFiltered = data.filter((project) => project.category === 'app');
+        setApps(appsFiltered);
+
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <>
+        <Hero />
+        <div id="briefcase">
+          <Briefcase title="- 🖥 Websites -">
+            {[1, 2, 3, 4].map((card) => <Card key={card} loading />)}
+          </Briefcase>
+          <Briefcase title="- 🕹 Games -">
+            {[1, 2, 3, 4].map((card) => <Card key={card} loading />)}
+          </Briefcase>
+          <Briefcase title="- 📱 More -">
+            {[1, 2, 3, 4].map((card) => <Card key={card} loading />)}
+          </Briefcase>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <Hero />
@@ -37,10 +60,10 @@ const Home = (props) => {
           {websites.map((card) => <Card key={card._id} card={card} category="websites" />)}
         </Briefcase>
         <Briefcase title="- 🕹 Games -">
-          {games.map((card) => <Card key={card.title} card={card} category="games" />)}
+          {games.map((card) => <Card key={card._id} card={card} category="games" />)}
         </Briefcase>
         <Briefcase title="- 📱 More -">
-          {apps.map((card) => <Card key={card.title} card={card} category="apps" />)}
+          {apps.map((card) => <Card key={card._id} card={card} category="apps" />)}
         </Briefcase>
       </div>
     </>
