@@ -11,7 +11,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -30,6 +30,13 @@ module.exports = {
         ],
       }
     ],
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    historyApiFallback: true,
+    port: 3000,
+    open: true
   },
   plugins: [
     new HtmlWebpackPlugin({
