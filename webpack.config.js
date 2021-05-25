@@ -22,9 +22,9 @@ module.exports = {
         },
       },
       {
-        test: /\.(s*)css$/,
+        test: /\.s[ac]ss$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          'style-loader',
           'css-loader',
           'sass-loader',
         ],
@@ -35,7 +35,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: 'body',
       template: './public/index.html',
-      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
