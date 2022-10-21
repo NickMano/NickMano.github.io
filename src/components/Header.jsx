@@ -2,12 +2,14 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import '../styles/components/Header.scss';
+import { useTheme } from '../hooks/useTheme';
 
 const Header = () => {
   const hasLink = useLocation().pathname !== '/';
+  const { color } = useTheme()
 
   return (
-    <nav className="header">
+    <nav className="header" style={{background: color}}>
       <figure className="logo">
         { (hasLink === true)
           ? <Link to="/" className="link--header">NICO MANO</Link>
