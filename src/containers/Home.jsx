@@ -15,6 +15,7 @@ const Home = () => {
   const [websites, setWebsites] = useState([]);
   const [games, setGames] = useState([]);
   const [apps, setApps] = useState([]);
+  const [tools, setTools] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -30,6 +31,9 @@ const Home = () => {
         const appsFiltered = data.filter((project) => project.category === 'app');
         setApps(appsFiltered);
 
+        const toolsFiltered = data.filter((project) => project.category === 'tool');
+        setTools(toolsFiltered)
+        
         setLoading(false);
       });
   }, []);
@@ -57,14 +61,17 @@ const Home = () => {
     <>
       <Hero />
       <div id="briefcase">
+        <Briefcase title="- 📱 Mobile -">
+          {apps.map((card) => <Card key={card._id} card={card} category="apps" />)}
+        </Briefcase>
         <Briefcase title="- 🖥 Websites -">
           {websites.map((card) => <Card key={card._id} card={card} category="websites" />)}
         </Briefcase>
         <Briefcase title="- 🕹 Games -">
           {games.map((card) => <Card key={card._id} card={card} category="games" />)}
         </Briefcase>
-        <Briefcase title="- 📱 More -">
-          {apps.map((card) => <Card key={card._id} card={card} category="apps" />)}
+        <Briefcase title="- ⚙️ Others -">
+          {tools.map((card) => <Card key={card._id} card={card} category="tools" />)}
         </Briefcase>
       </div>
     </>
