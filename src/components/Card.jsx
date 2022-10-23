@@ -6,7 +6,7 @@ import '../styles/components/Card.scss';
 const Card = ({ category, card, loading }) => {
   if (loading) {
     return (
-      <div className="card" />
+      <div className="card loading" />
     );
   }
 
