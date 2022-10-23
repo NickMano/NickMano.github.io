@@ -1,7 +1,7 @@
 @import "../App.scss";
 
 .button-container {
-  margin: 20px 0;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
 }
@@ -19,13 +19,24 @@
   justify-content: center;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14);
   transition: background 150ms ease-out 0s, border 150ms ease-out 0s,
-    transform 150ms ease-out 0s, box-shadow 150ms ease-out 0s;
+  transform 150ms ease-out 0s, box-shadow 150ms ease-out 0s;
 
+  &.dark {
+    background-color: $color-button-dark;
+    border-color: $color-button-dark;
+    color: white;
+  }
+  
   &:hover {
     background-color: $color-gray;
     color: white;
     transform: scale(1.016);
     box-shadow: 0 9px 12px 0 rgba(0, 0, 0, 0.14);
+  }
+
+  &.dark:hover {
+    background-color: #3a3a3c;
+    border-color: $color-gray;
   }
 
   @media screen and (max-width: $tablet) {

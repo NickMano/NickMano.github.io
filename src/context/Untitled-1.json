@@ -1,0 +1,121 @@
+{
+  "data": [
+    {
+      "_id": "6006da9a41eb881182e78ba4",
+      "title": "Pokedex",
+      "description": "This is a modern and minimalist pokedex",
+      "link": "https://nicomano-pokedex.netlify.app/",
+      "imageUrl": "https://i.ibb.co/JyvscmK/pokedex.webp",
+      "hero": "https://i.ibb.co/mv6n8gL/hero.webp",
+      "initialImage": "https://ibb.co/sqjY49c",
+      "images": [
+        "https://i.ibb.co/10NBbM1/image-3.webp",
+        "https://i.ibb.co/swQtYb0/image-1.webp",
+        "https://i.ibb.co/wCLBZjc/image-4.webp",
+        "https://i.ibb.co/VjmJZjF/image-2.webp",
+        "https://i.ibb.co/jr7h9Dw/image-6.webp"
+      ],
+      "category": "website"
+    },
+    {
+      "_id": "600738e0b35b723d3bcd921b",
+      "title": "Rick and Morty - Interdimesional Conference",
+      "description": "This project is a training of react using hooks and react router",
+      "link": "https://github.com/NickMano/training-react--rick-and-morty-interdimensional-conf",
+      "imageUrl": "https://i.ibb.co/f8csgxJ/cover.png",
+      "hero": "https://i.ibb.co/vJLjJyr/hero.png",
+      "initialImage": "https://i.ibb.co/xgDjt15/initial-Image.webp",
+      "images": [
+        "https://i.ibb.co/T45yd7k/image-1.webp",
+        "https://i.ibb.co/xhtNhkK/image-2.webp",
+        "https://i.ibb.co/kxKCDNS/image-3.webp"
+      ],
+      "category": "website"
+    },
+    {
+      "_id": "600855916c1dc80015ea4c20",
+      "title": "Petgram",
+      "description": "Social Media to pets",
+      "link": "https://github.com/NickMano/petgram",
+      "imageUrl": "https://i.ibb.co/DzjqtZX/cover.png",
+      "hero": "https://i.ibb.co/mBySyWw/cover-copia.png",
+      "initialImage": "https://i.ibb.co/mBySyWw/cover-copia.png",
+      "images": [],
+      "category": "website",
+      "inProgress": true
+    },
+    {
+      "_id": "60085aa36c1dc80015ea4c21",
+      "title": "wBooks-iOS",
+      "link": "https://github.com/NickMano/wBooks-ios",
+      "imageUrl": "https://i.ibb.co/XWfGPfk/wbooks.webp",
+      "description": "wBooks is a test application that manages book reservations.",
+      "hero": "https://i.ibb.co/C1MBfTx/hero.webp",
+      "initialImage": "https://i.ibb.co/C6ZpK9M/initial-Image.webp",
+      "images": ["https://i.ibb.co/GJMSJrJ/image-1.webp"],
+      "category": "app"
+    },
+    {
+      "_id": "600862e56c1dc80015ea4c22",
+      "title": "The-Legend-Of-Nickest",
+      "link": "https://github.com/NickMano/The-Legend-Of-Nickest",
+      "imageUrl": "https://i.ibb.co/tM9ygrj/TLON.webp",
+      "description": "Game of platform and action, inspired by Mario and Zelda",
+      "hero": "https://i.ibb.co/ZWVrKy6/hero.webp",
+      "initialImage": "https://i.ibb.co/2qqYHrZ/initial-Image.webp",
+      "images": [
+        "https://i.ibb.co/SfT5qqF/image-1.webp",
+        "https://i.ibb.co/cvJjmSn/image-2.webp",
+        "https://i.ibb.co/Dt9rqqw/image-4.webp"
+      ],
+      "category": "game"
+    },
+    {
+      "_id": "6008666b6c1dc80015ea4c23",
+      "title": "Nickest-Jump",
+      "description": "Infinite runner like Chrome Dinosaur",
+      "link": "https://nicomano.itch.io/nickest-jump",
+      "imageUrl": "https://i.ibb.co/682b3j6/Nickest-Jump.webp",
+      "hero": "https://i.ibb.co/yyYnFSx/hero.webp",
+      "initialImage": "https://i.ibb.co/Mkm7Mpn/initial-Image.webp",
+      "images": [
+        "https://i.ibb.co/YhH3GdR/image-4.webp",
+        "https://i.ibb.co/nswXQrr/image-2.webp",
+        "https://i.ibb.co/pLK2v70/image-3.webp",
+        "https://i.ibb.co/gSFhj56/image-1.webp"
+      ],
+      "category": "game"
+    },
+    {
+      "_id": "60086ad2294aef073903320e",
+      "title": "CryptoTracker",
+      "category": "app",
+      "inProgress": true,
+      "imageUrl": "https://i.ibb.co/WFf86rC/crypto-Tracker-cover.png"
+    },
+    {
+      "_id": "60086dfc6c1dc80015ea4c24",
+      "title": "Ping-Pong",
+      "description": "The classic game of Ping-Pong now on webp",
+      "link": "https://nicomano.itch.io/ping-pong",
+      "imageUrl": "https://i.ibb.co/Z8rgzrg/ping-pong.webp",
+      "hero": "https://i.ibb.co/kqksfww/hero.webp",
+      "initialImage": "https://i.ibb.co/jDmFBjY/initial-Image.webp",
+      "images": [
+        "https://i.ibb.co/G3zyCgf/image-3.webp",
+        "https://i.ibb.co/Jd5x2fW/image-1.webp",
+        "https://i.ibb.co/0tWZPgw/image-2.webp"
+      ],
+      "category": "game"
+    },
+    {
+      "_id": "60086ee5294aef073903320f",
+      "title": "Jira-To-Sheet",
+      "link": "https://github.com/NickMano/JIRA-to-Sheet",
+      "imageUrl": "https://i.ibb.co/sPhttpR/python.webp",
+      "inProgress": true,
+      "category": "app"
+    }
+  ],
+  "message": "projects listed"
+}

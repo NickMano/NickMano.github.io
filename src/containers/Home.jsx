@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import Briefcase from '../components/Briefcase';
 import Card from '../components/Card';
+import Button from '../components/Button';
 
 const getProjects = async () => {
   const res = await fetch('https://fathomless-plateau-37162.herokuapp.com/api/projects');

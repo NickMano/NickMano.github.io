@@ -6,7 +6,7 @@
 }
 
 body {
-  background: white;
+  background: $color-background;
 }
 
 h1,
@@ -17,11 +17,20 @@ h5 {
   font-weight: normal;
 }
 
+.dark {
+  color: white
+}
+
 .text--title {
   color: $color-black;
   text-align: center;
   font-size: 3.2em;
   line-height: 1.5;
+
+  &.dark {
+    color: white;
+  }
+  
   @media screen and (max-width: $tablet) {
     font-size: 2.4em;
   }
@@ -36,6 +45,11 @@ h5 {
   color: $color-gray;
   text-align: center;
   font-size: 2em;
+
+  &.dark {
+    color: $color-gray-dark;
+  }
+
   @media screen and (max-width: $laptop-m) {
     font-size: 1.8em;
   }

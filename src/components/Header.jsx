@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import '../styles/components/Header.scss';
 import { useTheme } from '../hooks/useTheme';
+import ThemeButton from './ThemeButton';
+import '../styles/components/Header.scss';
 
 const Header = () => {
   const hasLink = useLocation().pathname !== '/';
-  const { color } = useTheme()
+  const { mode } = useTheme()
 
   return (
-    <nav className="header" style={{background: color}}>
+    <nav className={`header ${mode}`}>
       <figure className="logo">
         { (hasLink === true)
           ? <Link to="/" className="link--header">NICO MANO</Link>
@@ -29,6 +30,9 @@ const Header = () => {
           </li>
           <li>
             <a className="link--header" target="_blank" rel="noreferrer" href="https://github.com/NickMano/">Github</a>
+          </li>
+          <li>
+            <ThemeButton />
           </li>
         </ol>
       </section>

@@ -1,7 +1,7 @@
 @import "../App.scss";
 
 .header {
-  background-color: $color-black;
+  background-color: $color-navbar;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -19,12 +19,17 @@
   &__list {
     list-style: none;
     display: flex;
+    align-items: center;
     @media screen and (max-width: $mobile-l) {
       padding: 0;
       width: inherit;
       justify-content: space-around;
     }
   }
+}
+
+.header.dark {
+  background-color: $color-navbar-dark;
 }
 
 .menu {

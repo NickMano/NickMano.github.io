@@ -2,11 +2,15 @@
 
 .hero {
     height: -webkit-fill-available;
-    background-color: transparent;
+    background-color: $color-background;
     background-size: cover;
     background-repeat: no-repeat;
     height: 30vh;
     text-align: center;
+}
+
+.hero.dark {
+    background: $color-background-dark;
 }
 
 .hero-container {
