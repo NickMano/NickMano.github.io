@@ -43,14 +43,17 @@ const Home = () => {
       <>
         <Hero />
         <div id="briefcase">
+          <Briefcase title="- 📱 Mobile -">
+            {[1, 2].map((card) => <Card key={card} loading />)}
+          </Briefcase>
           <Briefcase title="- 🖥 Websites -">
-            {[1, 2, 3, 4].map((card) => <Card key={card} loading />)}
+            {[1, 2].map((card) => <Card key={card} loading />)}
           </Briefcase>
           <Briefcase title="- 🕹 Games -">
-            {[1, 2, 3, 4].map((card) => <Card key={card} loading />)}
+            {[1, 2].map((card) => <Card key={card} loading />)}
           </Briefcase>
-          <Briefcase title="- 📱 More -">
-            {[1, 2, 3, 4].map((card) => <Card key={card} loading />)}
+          <Briefcase title="- ⚙️ Others -">
+            {[1, 2].map((card) => <Card key={card} loading />)}
           </Briefcase>
         </div>
       </>
