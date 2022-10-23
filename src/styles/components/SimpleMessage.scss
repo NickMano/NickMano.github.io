@@ -1,8 +1,13 @@
 @import '../App.scss';
 
 .fullScreen {
-    height: 76vh;
+    background-color: $color-background;
+    height: 98vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    &.dark {
+        background-color: $color-background-dark;
+    }
 }
